@@ -2,7 +2,7 @@
 #General Config Section
 [general]
 	#The Client ID of the Discord App to use
-	clientID = 925013258883178567
+	clientID = 956909409861267538
 	#Enable/Disable the mod
 	enabled = true
 	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
@@ -26,7 +26,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = "loading"
 	#The text that gets displayed when the small image is hovered
@@ -45,7 +45,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = ""
 	#The text that gets displayed when the small image is hovered
@@ -64,7 +64,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = ""
 	#The text that gets displayed when the small image is hovered
@@ -83,7 +83,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = "loading"
 	#The text that gets displayed when the small image is hovered
@@ -102,7 +102,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = ""
 	#The text that gets displayed when the small image is hovered
@@ -121,7 +121,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = ""
 	#The text that gets displayed when the small image is hovered
@@ -138,7 +138,7 @@
 	#The Asset ID of the image to display as the large image
 	largeImageKey = "logo"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Valhelsia 5"
+	largeImageText = "Valhelsia: Volatile"
 	#The Asset ID of the image to display as the small image
 	smallImageKey = ""
 	#The text that gets displayed when the small image is hovered
@@ -157,7 +157,7 @@
 		description = ""
 		state = ""
 		largeImageKey = ""
-		largeImageText = "Valhelsia 5"
+		largeImageText = "Valhelsia: Volatile"
 		smallImageKey = "mclogo"
 		smallImageText = "%mods% mods installed"
 
@@ -166,7 +166,7 @@
 		description = ""
 		state = ""
 		largeImageKey = ""
-		largeImageText = "Valhelsia 5"
+		largeImageText = "Valhelsia: Volatile"
 		smallImageKey = "the_nether"
 		smallImageText = "%mods% mods installed"
 
@@ -175,7 +175,7 @@
 		description = ""
 		state = ""
 		largeImageKey = ""
-		largeImageText = "Valhelsia 5"
+		largeImageText = "Valhelsia: Volatile"
 		smallImageKey = "the_end"
 		smallImageText = "%mods% mods installed"
 
