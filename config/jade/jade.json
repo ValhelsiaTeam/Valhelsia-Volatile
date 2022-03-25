@@ -66,7 +66,7 @@
     "autoScaleThreshold": 0.5
   },
   "formatting": {
-    "modName": "§9§o%s",
+    "modName": "§6§o%s",
     "blockName": "%s",
     "entityName": "%s",
     "registryName": "§7[%s]"
