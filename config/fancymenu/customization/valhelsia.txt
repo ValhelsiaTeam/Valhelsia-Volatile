@@ -14,11 +14,6 @@ customization {
 }
 
 customization {
-  identifier = %id=604346%
-  action = hidebutton
-}
-
-customization {
   identifier = %id=400322%
   orientation = mid-centered
   x = 2
@@ -241,12 +236,12 @@ customization {
 customization {
   path = kubejs/assets/custom-menu/textures/gui/valhelsia.png
   orientation = top-centered
-  x = -77
-  width = 155
+  x = -115
+  width = 231
   action = addtexture
   actionid = 06f4d2a6-41be-4fbe-8e61-98ce912fa3461639130597244
   y = 5
-  height = 66
+  height = 82
 }
 
 customization {
