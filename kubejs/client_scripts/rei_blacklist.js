@@ -7,5 +7,6 @@ onEvent('rei.hide.items', event => {
     'minecraft:light',
     'minecraft:structure_block',
     'minecraft:structure_void',
-  ])
-})
+    'chiselsandbits:block_bit'
+  ]);
+});
