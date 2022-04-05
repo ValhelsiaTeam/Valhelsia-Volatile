@@ -33,6 +33,9 @@ onEvent('rei.hide.items', event => {
 
   // Hide Disabled Items
   event.hide([
-    'byg:chain_plating',
+    'byg:chain_plating', // Redundant.
+    'valhelsia_structures:explorers_tent', // Unfinished.
+    'valhelsia_structures:hibiscus', // Unfinished.
+    'valhelsia_structures:giant_fern', // Unfinished.
   ]);
 });
