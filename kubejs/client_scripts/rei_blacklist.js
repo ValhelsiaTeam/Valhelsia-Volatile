@@ -10,6 +10,8 @@ onEvent('rei.hide.items', event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
     'alexsmobs:tab_icon',
+    'alexsmobs:vine_lasso_inventory',
+    'alexsmobs:vine_lasso_hand',
     'byg:byg_logo',
     'carryon:entity_item',
     'carryon:tile_item',
