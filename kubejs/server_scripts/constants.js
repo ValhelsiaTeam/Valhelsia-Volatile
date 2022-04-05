@@ -34,7 +34,7 @@ var allBYGLeaves = [
   'byg:green_enchanted_leaves',
   'byg:holly_berry_leaves',
   'byg:holly_leaves',
-  'byg:jacaranada_leaves',
+  'byg:jacaranda_leaves',
   'byg:flowering_jacaranda_leaves',
   'byg:indigo_jacaranda_leaves',
   'byg:flowering_indigo_jacaranda_leaves',
