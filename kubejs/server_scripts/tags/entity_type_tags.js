@@ -2,7 +2,7 @@
 // Valhelsia: Volatile
 // Entity Type Tags
 
-onEvent('entity_type.tags', event => {
+onEvent('tags.entity_type', event => {
 
   // Add Halloween Event Candy to Spoopy Mobs
   event.get('valhelsia_tweaks:drops_candy').add([
