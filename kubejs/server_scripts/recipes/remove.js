@@ -7,6 +7,8 @@ onEvent('recipes', function (event) {
   // Remove recipes by recipe ID.
   [
     'byg:chain_plating', // Redundant Item.
+    'undergarden:smoke_glitterkelp', // Redundant Recipe.
+    'undergarden:smelt_glitterkelp', // Redundant Recipe.
   ].forEach(function (remove) {
     event.remove({id: remove})
   });

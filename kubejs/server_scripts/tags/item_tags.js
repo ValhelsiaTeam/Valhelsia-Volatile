@@ -185,7 +185,6 @@ onEvent('tags.items', event => {
 
   // Leaf Carpets
   event.add('valhelsia:leaf_carpets', allLeafCarpets);
-  event.add('minecolonies:compostables_poor', '#valhelsia:leaf_carpets');
 
   // Vines
   event.add('valhelsia:vines', [
@@ -213,6 +212,30 @@ onEvent('tags.items', event => {
     'minecraft:kelp',
     'undergarden:glitterkelp',
     // Upgrade Aquatic Kelps here later.
+  ]);
+
+  // MineColonies
+  event.add('minecolonies:compostables_poor', [
+    '#valhelsia:leaf_carpets',
+  ]);
+
+  event.add('minecolonies:compostables', [
+    'minecraft:poisonous_potato', // Sorry, not sorry. ;)
+    'minecraft:glow_lichen',
+    'minecraft:moss_carpet',
+    'minecraft:moss_block',
+    'minecraft:hanging_roots',
+    'minecraft:big_dripleaf',
+    'minecraft:small_dripleaf',
+    'minecraft:spore_blossom',
+    'minecraft:crimson_fungus',
+    'minecraft:warped_fungus',
+    'minecraft:crimson_roots',
+    'minecraft:warped_roots',
+    'minecraft:nether_sprouts',
+    'minecraft:weeping_vines',
+    'minecraft:twisting_vines',
+    'undergarden:glitterkelp',
   ]);
 
   // Quark
