@@ -1,4 +1,5 @@
 // priority: 10
+// Valhelsia: Volatile
 // Shaped Crafting Recipes
 
 onEvent('recipes', function (event) {

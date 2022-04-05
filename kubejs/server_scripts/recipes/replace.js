@@ -64,4 +64,7 @@ onEvent('recipes', function (event) {
   ].forEach(function (recipeid) {
     event.replaceInput({id: recipeid}, 'minecraft:vine', '#valhelsia:vines/green', true);
   });
+
+  // Misc inter-mod compatibility:
+  event.replaceInput({id: 'alexsmobs:shark_tooth_arrow'}, 'minecraft:kelp', '#valhelsia:kelp', true);
 });

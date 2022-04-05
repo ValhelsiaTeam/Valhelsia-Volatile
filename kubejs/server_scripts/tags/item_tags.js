@@ -1,7 +1,7 @@
 // priority: 110
 // Valhelsia: Volatile
 // Item Tags
-// These are mostly for recipe inputunification, but sometimes have other uses.
+// These are mostly for recipe input unification, but sometimes have other uses.
 
 onEvent('tags.items', event => {
 
@@ -98,6 +98,15 @@ onEvent('tags.items', event => {
   event.add('forge:storage_blocks/raw_froststeel', 'undergarden:raw_froststeel_block');
   event.add('forge:storage_blocks/forgotten_metal', 'undergarden:forgotten_block');
 
+  // Seeds
+  event.add('forge:seeds'), [
+    'druidcraftrg:hemp_seeds',
+  ];
+  event.add('forge:seeds/hemp'), [
+    'druidcraftrg:hemp_seeds',
+    'immersiveengineering:seed'
+  ];
+
   // Sandstones
   event.add('forge:sandstone', [
     'byg:black_smooth_sandstone',
@@ -178,6 +187,7 @@ onEvent('tags.items', event => {
   event.add('valhelsia:leaf_carpets', allLeafCarpets);
   event.add('minecolonies:compostables_poor', '#valhelsia:leaf_carpets');
 
+  // Vines
   event.add('valhelsia:vines', [
     'minecraft:vine',
     'minecraft:weeping_vines',
@@ -196,6 +206,19 @@ onEvent('tags.items', event => {
     'minecraft:vine',
     'quark:cut_vine',
     'valhelsia_structures:hanging_vines',
+  ]);
+
+  // Kelp
+  event.add('valhelsia:kelp', [
+    'minecraft:kelp',
+    'undergarden:glitterkelp',
+    // Upgrade Aquatic Kelps here later.
+  ]);
+
+  // Quark
+  event.add('quark:seed_pouch_holdable', [
+    'undergarden:glitterkelp',
+    // Add items here to allow them to be added to a seed pouch.
   ]);
 
 });
