@@ -46,6 +46,12 @@ onEvent('tags.items', event => {
   event.add('forge:nuggets/froststeel', 'undergarden:froststeel_nugget');
   event.add('forge:nuggets/forgotten_metal', 'undergarden:forgotten_nugget');
 
+  // Ores
+  event.get('forge:ores').add([
+    'byg:emeraldite_ore',
+  ]);
+  event.add('forge:ores/emeraldite', 'byg:emeraldite_ore');
+
   // Raw Materials
   event.get('forge:raw_materials').add([
     'byg:raw_pendorite',

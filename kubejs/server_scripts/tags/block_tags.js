@@ -3,6 +3,22 @@
 // Block Tags
 
 onEvent('tags.blocks', event => {
+
+  // Ores
+  event.get('forge:ores').add([
+    'byg:emeraldite_ore',
+  ]);
+  event.add('forge:ores/emeraldite', 'byg:emeraldite_ore');
+
+  // Storage Blocks
+  event.get('forge:storage_blocks').add([
+    'byg:raw_pendorite_block',
+    'undergarden:forgotten_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_pendorite', 'byg:raw_pendorite_block');
+  event.add('forge:storage_blocks/forgotten_metal', 'undergarden:forgotten_block');
+
   // Sandstones
   event.get('forge:sandstone').add([
     'byg:black_smooth_sandstone',
