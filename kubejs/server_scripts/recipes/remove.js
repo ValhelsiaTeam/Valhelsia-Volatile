@@ -6,14 +6,21 @@ onEvent('recipes', function (event) {
 
   // Remove recipes by recipe ID.
   [
-    // None yet.
+    'byg:chain_plating', // Redundant Item.
   ].forEach(function (remove) {
     event.remove({id: remove})
   });
 
+  // Remove recipes by input.
+  [
+    'byg:chain_plating', // Redundant Item.
+  ].forEach(function (remove) {
+    event.remove({output: remove})
+  });
+
   // Remove recipes by output.
   [
-    // None yet.
+    // None Yet.
   ].forEach(function (remove) {
     event.remove({output: remove})
   });

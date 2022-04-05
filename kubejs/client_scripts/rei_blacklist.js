@@ -1,6 +1,8 @@
 // priority: 0
 
 onEvent('rei.hide.items', event => {
+
+  // Hide debug items, logos, and similar clutter.
   event.hide([
     'minecraft:barrier',
     'minecraft:jigsaw',
@@ -8,6 +10,7 @@ onEvent('rei.hide.items', event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
     'alexsmobs:tab_icon',
+    'byg:byg_logo',
     'carryon:entity_item',
     'carryon:tile_item',
     'chiselsandbits:block_bit',
@@ -24,5 +27,10 @@ onEvent('rei.hide.items', event => {
     'immersiveengineering:fake_icon_lucky',
     'immersiveengineering:fake_icon_drillbreak',
     'immersiveengineering:fake_icon_ravenholm'
+  ]);
+
+  // Hide Disabled Items
+  event.hide([
+    'byg:chain_plating',
   ]);
 });
