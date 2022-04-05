@@ -58,7 +58,7 @@ onEvent('tags.items', event => {
   event.add('forge:ingots', [
     'botania:gaia_ingot',
     'byg:pendorite_ingot',
-    'immersiveengineering::ingot_hop_graphite',
+    'immersiveengineering:ingot_hop_graphite',
     'undergarden:forgotten_ingot',
   ]);
 
