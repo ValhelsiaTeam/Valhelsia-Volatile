@@ -13,6 +13,55 @@ onEvent('tags.items', event => {
 
   event.add('forge:crops/cattail', 'byg:cattail_sprout');
 
+  // Fruits
+  event.get('forge:fruits').add([
+    'minecraft:apple',
+    'minecraft:golden_apple',
+    'minecraft:enchanted_golden_apple',
+    'minecraft:melon_slice',
+  ]);
+
+  event.get('forge:fruits/apple').add([
+    'minecraft:apple',
+    'byg:green_apple',
+    'minecraft:golden_apple',
+    'minecraft:enchanted_golden_apple',
+  ]);
+  event.add('forge:fruits/melon', 'minecraft:melon_slice');
+
+  // Ingots
+  event.get('forge:ingots').add([
+    'botania:gaia_ingot',
+    'byg:pendorite_ingot',
+    'immersiveengineering::ingot_hop_graphite',
+    'undergarden:forgotten_ingot',
+  ]);
+
+  // Nuggets
+  event.add('forge:nuggets/froststeel', 'undergarden:froststeel_nugget');
+  event.add('forge:nuggets/forgotten_metal', 'undergarden:forgotten_nugget');
+
+  // Raw Materials
+  event.get('forge:raw_materials').add([
+    'byg:raw_pendorite',
+    'undergarden:raw_cloggrum',
+    'undergarden:raw_froststeel',
+  ]);
+
+  event.add('forge:raw_materials/pendorite', 'byg:raw_pendorite');
+
+  // Storage Blocks
+  event.get('forge:storage_blocks').add([
+    'byg:raw_pendorite_block',
+    'undergarden:raw_cloggrum_block',
+    'undergarden:raw_froststeel_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_pendorite', 'byg:raw_pendorite_block');
+  event.add('forge:storage_blocks/raw_cloggrum', 'undergarden:raw_cloggrum_block');
+  event.add('forge:storage_blocks/raw_froststeel', 'undergarden:raw_froststeel_block');
+  event.add('forge:storage_blocks/forgotten_metal', 'undergarden:forgotten_block');
+
   // Sandstones
   event.get('forge:sandstone').add([
     'byg:black_smooth_sandstone',
