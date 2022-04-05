@@ -38,6 +38,11 @@ onEvent('tags.items', event => {
   ]);
 
   // Nuggets
+  event.get('forge:nuggets').add([
+    'byg:emeraldite_shards',
+  ]);
+
+  event.add('forge:nuggets/emeraldite', 'byg:emeraldite_shards');
   event.add('forge:nuggets/froststeel', 'undergarden:froststeel_nugget');
   event.add('forge:nuggets/forgotten_metal', 'undergarden:forgotten_nugget');
 
