@@ -50,7 +50,8 @@ onEvent('recipes', event => {
   const conj2xPlant = (plant) => {
     conjuration(Item.of(plant, 2), plant, 800);
   }
-  conj2xLeaves = (leaves) => {
+
+  const conj2xLeaves = (leaves) => {
     conjuration(Item.of(leaves, 2), leaves, 2000);
   }
 
