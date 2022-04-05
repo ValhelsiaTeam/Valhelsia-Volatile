@@ -23,7 +23,7 @@ onEvent('recipes', function (event) {
     'supplementaries:turn_table',
     'structurize:sceptergold',
   ].forEach(function (id) {
-    replaceInputID(recipeid, 'minecraft:cobblestone', '#minecraft:stone_crafting_materials');
+    replaceInputID(id, 'minecraft:cobblestone', '#minecraft:stone_crafting_materials');
   });
 
   // Stone variants in place of Minecraft Stone in some recipes:
