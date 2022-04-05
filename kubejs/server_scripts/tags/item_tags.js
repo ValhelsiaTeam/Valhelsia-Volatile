@@ -182,20 +182,20 @@ onEvent('tags.items', event => {
     'minecraft:vine',
     'minecraft:weeping_vines',
     'minecraft:twisting_vines',
-    'quark:cut_vines',
+    'quark:cut_vine',
     'byg:imparius_vine',
     'byg:lament_vine',
     'byg:skyris_vine',
     'byg:embur_gel_vines',
     'byg:wailing_vine',
     'byg:shulkren_vine',
-    'valhelsia_structures:hanging_vine',
+    'valhelsia_structures:hanging_vines',
   ]);
 
   event.add('valhelsia:vines/green', [
     'minecraft:vine',
-    'quark:cut_vines',
-    'valhelsia_structures:hanging_vine',
+    'quark:cut_vine',
+    'valhelsia_structures:hanging_vines',
   ]);
 
 });
