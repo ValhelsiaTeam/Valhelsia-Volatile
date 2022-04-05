@@ -23,7 +23,7 @@ onEvent('tags.items', event => {
     'minecraft:glow_berries',
     'ecologics:coconut_slice',
     'ecologics:prickly_pear',
-    'undergarden:droopfruit_item',
+    'undergarden:droopvine_item',
   ]);
 
   event.add('forge:fruits/apple', [
