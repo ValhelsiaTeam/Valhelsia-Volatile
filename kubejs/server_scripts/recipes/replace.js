@@ -20,7 +20,11 @@ onEvent('recipes', function (event) {
 
   // Stone variants in place of stone in some recipes:
   [ // Recipe ID:
-    'multiblock:multiblock'
+    'botania:exchange_rod',
+    'botania:temperance_stone',
+    'botania:tiny_planet',
+    'botania:tiny_planet_block',
+    'multiblock:multiblock',
   ].forEach(function (recipeid) {
     event.replaceInput({id: recipeid}, 'minecraft:stone', '#forge:stone', true);
   });
@@ -41,4 +45,23 @@ onEvent('recipes', function (event) {
   });
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers', true);
 
+  // Vine variants in place of vines in some recipes:
+  [ // Recipe ID:
+    'minecraft:mossy_cobblestone_from_vine',
+    'minecraft:mossy_stone_bricks_from_vine',
+    'alexsmobs:vine_lasso',
+    'botania:mossy_livingwood_planks_vine',
+    'botania:mossy_livingrock_bricks_vine',
+    'botania:mossy_dreamwood_planks_vine',
+    'botania:keep_ivy',
+    'botania:thorn_chakram',
+    'botania:vine_ball',
+    'byg:mossy_stone',
+    'byg:mossy_red_rock_bricks',
+    'valhelsia_structures:lapidified_jungle_log',
+    'waystones:mossy_waystone_convert',
+    
+  ].forEach(function (recipeid) {
+    event.replaceInput({id: recipeid}, 'minecraft:vine', '#valhelsia:vines/green', true);
+  });
 });
