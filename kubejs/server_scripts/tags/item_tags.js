@@ -21,6 +21,8 @@ onEvent('tags.items', event => {
     'minecraft:melon_slice',
     'minecraft:sweet_berries',
     'minecraft:glow_berries',
+    'ecologics:coconut_slice',
+    'ecologics:prickly_pear',
     'undergarden:droopfruit_item',
   ]);
 
@@ -32,7 +34,9 @@ onEvent('tags.items', event => {
   ]);
 
   event.add('forge:fruits/baobab', 'byg:baobab_fruit');
+  event.add('forge:fruits/coconut', 'ecologics:coconut_slice');
   event.add('forge:fruits/melon', 'minecraft:melon_slice');
+  event.add('forge:fruits/prickly_pear', 'ecologics:prickly_pear');
 
   event.get('rootsclassic:berries').add([
     'minecraft:sweet_berries',
@@ -41,6 +45,13 @@ onEvent('tags.items', event => {
     'byg:holly_berries',
     'byg:nightshade_berries',
     'byg:blueberries',
+  ]);
+
+  // Feathers
+  event.get('forge:feathers').add([
+    'alexsmobs:roadrunner_feather',
+    'alexsmobs:emu_feather',
+    'ecologics:penguin_feather',
   ]);
 
   // Ingots
