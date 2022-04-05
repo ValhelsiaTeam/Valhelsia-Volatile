@@ -8,6 +8,8 @@ onEvent('rei.hide.items', event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
     'alexsmobs:tab_icon',
+    'carryon:entity_item',
+    'carryon:tile_item',
     'chiselsandbits:block_bit',
     'citadel:debug',
     'citadel:citadel_book',
