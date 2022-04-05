@@ -19,6 +19,9 @@ onEvent('tags.items', event => {
     'minecraft:golden_apple',
     'minecraft:enchanted_golden_apple',
     'minecraft:melon_slice',
+    'minecraft:sweet_berries',
+    'minecraft:glow_berries',
+    'undergarden:droopfruit_item',
   ]);
 
   event.get('forge:fruits/apple').add([
@@ -27,7 +30,18 @@ onEvent('tags.items', event => {
     'minecraft:golden_apple',
     'minecraft:enchanted_golden_apple',
   ]);
+
+  event.add('forge:fruits/baobab', 'byg:baobab_fruit');
   event.add('forge:fruits/melon', 'minecraft:melon_slice');
+
+  event.get('rootsclassic:berries').add([
+    'minecraft:sweet_berries',
+    'minecraft:glow_berries',
+    'byg:crimson_berries',
+    'byg:holly_berries',
+    'byg:nightshade_berries',
+    'byg:blueberries',
+  ]);
 
   // Ingots
   event.get('forge:ingots').add([
@@ -147,6 +161,30 @@ onEvent('tags.items', event => {
     'byg:white_chiseled_sandstone',
     'byg:white_cut_sandstone',
     'byg:white_smooth_sandstone',
+  ]);
+
+  // Leaf Carpets
+  event.get('valhelsia:leaf_carpets').add(allLeafCarpets);
+  event.get('minecolonies:compostables_poor').add('#valhelsia:leaf_carpets');
+
+  event.get('valhelsia:vines').add([
+    'minecraft:vine',
+    'minecraft:weeping_vines',
+    'minecraft:twisting_vines',
+    'quark:cut_vines',
+    'byg:imparius_vine',
+    'byg:lament_vine',
+    'byg:skyris_vine',
+    'byg:embur_gel_vines',
+    'byg:wailing_vine',
+    'byg:shulkren_vine',
+    'valhelsia_structures:hanging_vine',
+  ]);
+
+  event.get('valhelsia:vines/green').add([
+    'minecraft:vine',
+    'quark:cut_vines',
+    'valhelsia_structures:hanging_vine',
   ]);
 
 });
