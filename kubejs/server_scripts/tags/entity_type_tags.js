@@ -5,7 +5,7 @@
 onEvent('tags.entity_type', event => {
 
   // Add Halloween Event Candy to Spoopy Mobs
-  event.get('valhelsia_tweaks:drops_candy').add([
+  event.add('valhelsia_tweaks:drops_candy', [
     'minecraft:zombie',
     'minecraft:husk',
     'minecraft:skeleton',

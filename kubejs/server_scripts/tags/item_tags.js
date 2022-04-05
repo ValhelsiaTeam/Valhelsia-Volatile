@@ -6,7 +6,7 @@
 onEvent('tags.items', event => {
 
   // Crops
-  event.get('forge:crops').add([
+  event.add('forge:crops', [
     'alexsmobs:banana',
     'byg:cattail_sprout',
   ]);
@@ -14,7 +14,7 @@ onEvent('tags.items', event => {
   event.add('forge:crops/cattail', 'byg:cattail_sprout');
 
   // Fruits
-  event.get('forge:fruits').add([
+  event.add('forge:fruits', [
     'minecraft:apple',
     'minecraft:golden_apple',
     'minecraft:enchanted_golden_apple',
@@ -26,7 +26,7 @@ onEvent('tags.items', event => {
     'undergarden:droopfruit_item',
   ]);
 
-  event.get('forge:fruits/apple').add([
+  event.add('forge:fruits/apple', [
     'minecraft:apple',
     'byg:green_apple',
     'minecraft:golden_apple',
@@ -38,7 +38,7 @@ onEvent('tags.items', event => {
   event.add('forge:fruits/melon', 'minecraft:melon_slice');
   event.add('forge:fruits/prickly_pear', 'ecologics:prickly_pear');
 
-  event.get('rootsclassic:berries').add([
+  event.add('rootsclassic:berries', [
     'minecraft:sweet_berries',
     'minecraft:glow_berries',
     'byg:crimson_berries',
@@ -48,14 +48,14 @@ onEvent('tags.items', event => {
   ]);
 
   // Feathers
-  event.get('forge:feathers').add([
+  event.add('forge:feathers', [
     'alexsmobs:roadrunner_feather',
     'alexsmobs:emu_feather',
     'ecologics:penguin_feather',
   ]);
 
   // Ingots
-  event.get('forge:ingots').add([
+  event.add('forge:ingots', [
     'botania:gaia_ingot',
     'byg:pendorite_ingot',
     'immersiveengineering::ingot_hop_graphite',
@@ -63,7 +63,7 @@ onEvent('tags.items', event => {
   ]);
 
   // Nuggets
-  event.get('forge:nuggets').add([
+  event.add('forge:nuggets', [
     'byg:emeraldite_shards',
   ]);
 
@@ -72,13 +72,13 @@ onEvent('tags.items', event => {
   event.add('forge:nuggets/forgotten_metal', 'undergarden:forgotten_nugget');
 
   // Ores
-  event.get('forge:ores').add([
+  event.add('forge:ores', [
     'byg:emeraldite_ore',
   ]);
   event.add('forge:ores/emeraldite', 'byg:emeraldite_ore');
 
   // Raw Materials
-  event.get('forge:raw_materials').add([
+  event.add('forge:raw_materials', [
     'byg:raw_pendorite',
     'undergarden:raw_cloggrum',
     'undergarden:raw_froststeel',
@@ -87,7 +87,7 @@ onEvent('tags.items', event => {
   event.add('forge:raw_materials/pendorite', 'byg:raw_pendorite');
 
   // Storage Blocks
-  event.get('forge:storage_blocks').add([
+  event.add('forge:storage_blocks', [
     'byg:raw_pendorite_block',
     'undergarden:raw_cloggrum_block',
     'undergarden:raw_froststeel_block',
@@ -99,7 +99,7 @@ onEvent('tags.items', event => {
   event.add('forge:storage_blocks/forgotten_metal', 'undergarden:forgotten_block');
 
   // Sandstones
-  event.get('forge:sandstone').add([
+  event.add('forge:sandstone', [
     'byg:black_smooth_sandstone',
     'byg:blue_smooth_sandstone',
     'byg:pink_smooth_sandstone',
@@ -109,43 +109,43 @@ onEvent('tags.items', event => {
     'quark:red_sandstone_bricks',
   ]);
 
-  event.get('forge:sandstone/black').add([
+  event.add('forge:sandstone/black', [
     'byg:black_sandstone',
     'byg:black_chiseled_sandstone',
     'byg:black_cut_sandstone',
     'byg:black_smooth_sandstone',
   ]);
   
-  event.get('forge:sandstone/blue').add([
+  event.add('forge:sandstone/blue', [
     'byg:blue_sandstone',
     'byg:blue_chiseled_sandstone',
     'byg:blue_cut_sandstone',
     'byg:blue_smooth_sandstone',
   ]);
 
-  event.get('forge:sandstone/colorless').add([
+  event.add('forge:sandstone/colorless', [
     'quark:sandstone_bricks',
   ]);
 
-  event.get('forge:sandstone/pink').add([
+  event.add('forge:sandstone/pink', [
     'byg:pink_sandstone',
     'byg:pink_chiseled_sandstone',
     'byg:pink_cut_sandstone',
     'byg:pink_smooth_sandstone',
   ]);
 
-  event.get('forge:sandstone/purple').add([
+  event.add('forge:sandstone/purple', [
     'byg:purple_sandstone',
     'byg:purple_chiseled_sandstone',
     'byg:purple_cut_sandstone',
     'byg:purple_smooth_sandstone',
   ]);
   
-  event.get('forge:sandstone/red').add([
+  event.add('forge:sandstone/red', [
     'quark:red_sandstone_bricks',
   ]);
 
-  event.get('forge:sandstone/soul').add([
+  event.add('forge:sandstone/soul', [
     'quark:soul_sandstone',
     'quark:soul_sandstone_bricks',
     'quark:smooth_soul_sandstone',
@@ -153,13 +153,13 @@ onEvent('tags.items', event => {
     'quark:chiseled_soul_sandstone',
   ]);
 
-  event.get('forge:sandstone/soulless').add([
+  event.add('forge:sandstone/soulless', [
     'forbidden_arcanus:soulless_sandstone',
     'forbidden_arcanus:cut_soulless_sandstone',
     'forbidden_arcanus:polished_soulless_sandstone',
   ]);
   
-  event.get('forge:sandstone/windswept').add([
+  event.add('forge:sandstone/windswept', [
     'byg:windswept_sandstone',
     'byg:chiseled_windswept_sandstone',
     'byg:cut_windswept_sandstone',
@@ -167,7 +167,7 @@ onEvent('tags.items', event => {
     'byg:windswept_sandstone_pillar',
   ]);
 
-  event.get('forge:sandstone/white').add([
+  event.add('forge:sandstone/white', [
     'byg:white_sandstone',
     'byg:white_chiseled_sandstone',
     'byg:white_cut_sandstone',
@@ -175,10 +175,10 @@ onEvent('tags.items', event => {
   ]);
 
   // Leaf Carpets
-  event.get('valhelsia:leaf_carpets').add(allLeafCarpets);
-  event.get('minecolonies:compostables_poor').add('#valhelsia:leaf_carpets');
+  event.add('valhelsia:leaf_carpets', allLeafCarpets);
+  event.add('minecolonies:compostables_poor', '#valhelsia:leaf_carpets');
 
-  event.get('valhelsia:vines').add([
+  event.add('valhelsia:vines', [
     'minecraft:vine',
     'minecraft:weeping_vines',
     'minecraft:twisting_vines',
@@ -192,7 +192,7 @@ onEvent('tags.items', event => {
     'valhelsia_structures:hanging_vine',
   ]);
 
-  event.get('valhelsia:vines/green').add([
+  event.add('valhelsia:vines/green', [
     'minecraft:vine',
     'quark:cut_vines',
     'valhelsia_structures:hanging_vine',
