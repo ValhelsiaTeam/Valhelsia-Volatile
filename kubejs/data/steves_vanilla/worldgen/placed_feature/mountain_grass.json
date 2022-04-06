@@ -1,0 +1,20 @@
+{
+	"feature": "steves_vanilla:mountain_grass",
+	"placement": [
+    {
+			"chance": 6,
+			"type": "minecraft:rarity_filter"
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"heightmap": "WORLD_SURFACE_WG",
+			"type": "minecraft:heightmap"
+		},
+		{
+			"count": 2,
+			"type": "minecraft:count"
+		}
+	]
+}

@@ -77,5 +77,5 @@ var allBYGLeaves = [
   'byg:red_spruce_leaves',
   'byg:yellow_birch_leaves',
   'byg:yellow_spruce_leaves',
-  //'byg:firecracker_leaves', // Excluding Firecracker leaves because they don't have the leaves tag.
+  'byg:firecracker_leaves',
 ];
