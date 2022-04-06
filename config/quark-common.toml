@@ -486,7 +486,8 @@
 	"Big Stone Clusters" = true
 	"Big Dungeon" = true
 	"Glimmering Weald" = true
-	"Azalea Wood" = true
+  # Azalea wood is Handled by Ecologics instead.
+	"Azalea Wood" = false 
 
 	[world.spiral_spires]
 		Rarity = 200
