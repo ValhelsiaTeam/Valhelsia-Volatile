@@ -1,4 +1,6 @@
 // priority: 0
+// Valhelsia: Volatile
+// REI Blacklist
 
 onEvent('rei.hide.items', event => {
 
@@ -15,7 +17,6 @@ onEvent('rei.hide.items', event => {
     'byg:byg_logo',
     'carryon:entity_item',
     'carryon:tile_item',
-    'chiselsandbits:block_bit',
     'citadel:debug',
     'citadel:citadel_book',
     'citadel:effect_item',
@@ -28,7 +29,9 @@ onEvent('rei.hide.items', event => {
     'immersiveengineering:fake_icon_birthday',
     'immersiveengineering:fake_icon_lucky',
     'immersiveengineering:fake_icon_drillbreak',
-    'immersiveengineering:fake_icon_ravenholm'
+    'immersiveengineering:fake_icon_ravenholm',
+    'valhelsia_tweaks:birthday_cake', // Seasonal stuff should usually be a surprise.
+    'valhelsia_tweaks:valhelsia_firework_rocket',
   ]);
 
   // Hide Disabled Items
@@ -38,4 +41,8 @@ onEvent('rei.hide.items', event => {
     'valhelsia_structures:hibiscus', // Unfinished.
     'valhelsia_structures:giant_fern', // Unfinished.
   ]);
+});
+
+onEvent('rei.hide.items', event => {
+  // Hide Fluids.
 });

@@ -62,7 +62,7 @@ onEvent('recipes', function (event) {
   ], {
     A: 'minecraft:chain'
   });
-  
+
   event.shaped('minecraft:bundle', [
     'SCS',
     'C C',
