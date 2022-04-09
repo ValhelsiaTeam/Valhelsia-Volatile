@@ -21,6 +21,7 @@ onEvent('rei.hide.items', event => {
     'citadel:citadel_book',
     'citadel:effect_item',
     'citadel:fancy_item',
+    'create:copper_backtank_placeable',
     'titanium:block_test',
     'titanium:block_twenty_four_test',
     'titanium:block_asset_test',
@@ -30,6 +31,7 @@ onEvent('rei.hide.items', event => {
     'immersiveengineering:fake_icon_lucky',
     'immersiveengineering:fake_icon_drillbreak',
     'immersiveengineering:fake_icon_ravenholm',
+    'supplementaries:placeable_item',
     'valhelsia_tweaks:birthday_cake', // Seasonal stuff should usually be a surprise.
     'valhelsia_tweaks:valhelsia_firework_rocket',
   ]);
@@ -41,6 +43,13 @@ onEvent('rei.hide.items', event => {
     'valhelsia_structures:hibiscus', // Unfinished.
     'valhelsia_structures:giant_fern', // Unfinished.
   ]);
+
+  // Hide other items that clutter up REI too much.
+  event.hide([
+    // Hide duplicate Refined Storage things that are just different colour variants. You can still see that they can be dyed by looking at the recipes / uses.
+    /refinedstorage:(white|orange|magenta|yellow|lime|pink|gray|light_gray|cyan|purple|blue|brown|green|red|black)_(controller|creative_controller|grid|crafting_grid|pattern_grid|fluid_grid|network_receiver|network_transmitter|relay|wireless_transmitter|disk_manipulator|crafter|crafter_manager|crafting_monitor|security_manager|detector)/
+  ]);
+
 });
 
 onEvent('rei.hide.items', event => {
