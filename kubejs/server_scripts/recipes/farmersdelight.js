@@ -3,8 +3,6 @@
 // Farmer's Delight Additions & Compatibility
 
 onEvent('recipes', function (event) {
-  
-/* Disabled until Farmer's Delight updates.
 
   // Cutting Board Axe Stripping Recipe Template
   const strip = (output, input) => {
@@ -75,5 +73,5 @@ onEvent('recipes', function (event) {
   cut([Item.of('minecraft:string', 2)], '#minecraft:wool');
 
   // ----- Cooking Pot Recipes -----
-*/
+
 });
