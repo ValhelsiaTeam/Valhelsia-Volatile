@@ -72,7 +72,10 @@ onEvent('recipes', function (event) {
     'CCC'
   ], {
     S: 'minecraft:string',
-    C: '#minecraft:wool'
+    C: 'farmersdelight:canvas'
   });
+
+  // Farmer's Delight
+  shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
 });
