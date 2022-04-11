@@ -7,6 +7,7 @@ onEvent('recipes', function (event) {
   // Remove recipes by recipe ID.
   [
     'byg:chain_plating', // Redundant Item.
+    'oreganized:electrum_ingot', // Use alloy kiln, not crafting.
     'undergarden:smoke_glitterkelp', // Redundant Recipe.
     'undergarden:smelt_glitterkelp', // Redundant Recipe.
   ].forEach(function (remove) {
