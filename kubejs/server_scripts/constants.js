@@ -1,6 +1,29 @@
 // priority: 9001
+// Valhelsia: Volatile
+// Constants
 
-var allLeafCarpets = [
+const AKASHIC_TOME_NBT = '{"akashictome:data":{alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},botania:{Count:1b,id:"botania:lexicon"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},oc2:{Count:1b,id:"oc2:manual"},patchouli:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}},patchouli_0:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_0","patchouli:book":"engineersdecor:engineersdecor_manual"}},patchouli_1:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_1","patchouli:book":"littlelogistics:guide"}},rftoolsbase:{Count:1b,id:"rftoolsbase:manual"},rootsclassic:{Count:1b,id:"rootsclassic:runic_tablet"}}}';
+
+const COLORS = [
+  'white',
+  'orange',
+  'magenta',
+  'light_blue',
+  'yellow',
+  'lime',
+  'pink',
+  'gray',
+  'light_gray',
+  'cyan',
+  'purple',
+  'blue',
+  'brown',
+  'green',
+  'red',
+  'black'
+];
+
+const ALL_LEAF_CARPETS = [
   'byg:pink_cherry_foliage',
   'byg:white_cherry_foliage',
   'byg:ether_foliage',
@@ -18,9 +41,9 @@ var allLeafCarpets = [
   'quark:blue_blossom_leaf_carpet',
   'quark:red_blossom_leaf_carpet',
   'quark:orange_blossom_leaf_carpet',
-]
+];
 
-var allBYGLeaves = [
+const ALL_BYG_LEAVES = [
   'byg:aspen_leaves',
   'byg:baobab_leaves',
   'byg:blue_enchanted_leaves',
@@ -79,3 +102,4 @@ var allBYGLeaves = [
   'byg:yellow_spruce_leaves',
   'byg:firecracker_leaves',
 ];
+

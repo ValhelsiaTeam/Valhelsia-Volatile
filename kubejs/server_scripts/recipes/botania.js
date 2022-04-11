@@ -78,7 +78,7 @@ onEvent('recipes', event => {
   // 200 for Netherrack, 720 for gravel, 800 mana for grass, 1500 for soul sand, 2000 mana for leaves, 2100 for coal, 5000 for glowstone dust.
 
   // Plant Duplication
-  allLeafCarpets.forEach(function (plant) {
+  ALL_LEAF_CARPETS.forEach(function (plant) {
     conj2xPlant(plant);
   });
 
@@ -116,7 +116,7 @@ onEvent('recipes', event => {
   });
 
   // Leaves Duplication
-  allBYGLeaves.forEach(function (leaves) {
+  ALL_BYG_LEAVES.forEach(function (leaves) {
     conj2xLeaves(leaves);
   });
 

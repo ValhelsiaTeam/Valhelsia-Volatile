@@ -10,6 +10,9 @@ onEvent('recipes', function (event) {
   let wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
   let barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
 
+  // Valhelsia
+  wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');
+
   // Minecraft
   shaped3x3('minecraft:cobweb', 'minecraft:string');
 

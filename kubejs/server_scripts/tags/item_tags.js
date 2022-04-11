@@ -184,7 +184,7 @@ onEvent('tags.items', event => {
   ]);
 
   // Leaf Carpets
-  event.add('valhelsia:leaf_carpets', allLeafCarpets);
+  event.add('valhelsia:leaf_carpets', ALL_LEAF_CARPETS);
 
   // Vines
   event.add('valhelsia:vines', [

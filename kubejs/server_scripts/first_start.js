@@ -4,5 +4,7 @@ onEvent('player.logged_in', function (event) {
 
     event.player.tell(Text.translate('valhelsia.first_start_message'))
     event.player.tell(Text.translate('valhelsia.discord').blue().underlined().click('https://discord.com/invite/rdfQuaM'))
+
+    event.player.give(Item.of('akashictome:tome', AKASHIC_TOME_NBT));
   }
 })
