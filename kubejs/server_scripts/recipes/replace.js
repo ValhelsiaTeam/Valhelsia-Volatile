@@ -12,6 +12,9 @@ onEvent('recipes', function (event) {
     event.replaceInput({}, from, to, true)
   };
 
+  // Fix BYG's use of the Fabric tag for lecterns instead of the Forge tag when changing the Lectern recipe.
+  replaceInputID('minecraft:lectern', '#c:bookshelves', '#forge:bookshelves');
+
   // Cobblestone variants in place of Minecraft Cobblestone in some recipes:
   [ // Recipe ID:
     'minecraft:dispenser',
