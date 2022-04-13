@@ -42,6 +42,54 @@ onEvent('rei.hide.items', event => {
     'valhelsia_structures:explorers_tent', // Unfinished.
     'valhelsia_structures:hibiscus', // Unfinished.
     'valhelsia_structures:giant_fern', // Unfinished.
+
+    // Immersive Engineering
+    'immersiveengineering:deepslate_ore_lead',
+    'immersiveengineering:deepslate_ore_uranium',
+    'immersiveengineering:dust_copper',
+    'immersiveengineering:dust_gold',
+    'immersiveengineering:dust_iron',
+    'immersiveengineering:dust_lead',
+    'immersiveengineering:dust_steel',
+    'immersiveengineering:dust_uranium',
+    'immersiveengineering:ingot_lead',
+    'immersiveengineering:ingot_steel',
+    'immersiveengineering:ingot_uranium',
+    'immersiveengineering:nugget_copper',
+    'immersiveengineering:nugget_lead',
+    'immersiveengineering:nugget_steel',
+    'immersiveengineering:nugget_uranium',
+    'immersiveengineering:ore_lead',
+    'immersiveengineering:ore_uranium',
+    'immersiveengineering:plate_copper',
+    'immersiveengineering:plate_gold',
+    'immersiveengineering:plate_iron',
+    'immersiveengineering:raw_block_lead',
+    'immersiveengineering:raw_block_uranium',
+    'immersiveengineering:raw_lead',
+    'immersiveengineering:raw_uranium',
+    'immersiveengineering:sword_steel',
+    'immersiveengineering:pickaxe_steel',
+    'immersiveengineering:axe_steel',
+    'immersiveengineering:shovel_steel',
+    'immersiveengineering:hoe_steel',
+
+    // Mekanism Tools
+    'mekanismtools:steel_helmet',
+    'mekanismtools:steel_chestplate',
+    'mekanismtools:steel_leggings',
+    'mekanismtools:steel_boots',
+    'mekanismtools:lapis_lazuli_sword',
+    'mekanismtools:lapis_lazuli_pickaxe',
+    'mekanismtools:lapis_lazuli_axe',
+    'mekanismtools:lapis_lazuli_shovel',
+    'mekanismtools:lapis_lazuli_hoe',
+    'mekanismtools:lapis_lazuli_paxel',
+    'mekanismtools:lapis_lazuli_helmet',
+    'mekanismtools:lapis_lazuli_chestplate',
+    'mekanismtools:lapis_lazuli_leggings',
+    'mekanismtools:lapis_lazuli_boots',
+    'mekanismtools:lapis_lazuli_shield',
   ]);
 
   // Hide other items that clutter up REI too much.
