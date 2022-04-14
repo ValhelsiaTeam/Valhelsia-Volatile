@@ -16,6 +16,7 @@ onEvent('recipes', function (event) {
     'immersiveengineering:crafting/iron_ingot_from_dust_from_blasting', // Duplicate recipe.
     'immersiveengineering:crafting/iron_ingot_from_dust', // Duplicate recipe.
     'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
+    'immersiveengineering:crafting/nugget_copper_to_copper_ingot', // Redundant recipe.
   ].forEach(function (remove) {
     event.remove({id: remove})
   });
