@@ -22,6 +22,18 @@ onEvent('rei.hide.items', event => {
     'citadel:effect_item',
     'citadel:fancy_item',
     'create:copper_backtank_placeable',
+    'graveyard:tg_rooted_dirt',
+    'graveyard:tg_tuff',
+    'graveyard:tg_moss_block',
+    'graveyard:tg_deepslate',
+    'graveyard:tg_grass_block',
+    'graveyard:tg_dirt',
+    'graveyard:tg_coarse_dirt',
+    'graveyard:tg_andesite',
+    'graveyard:tg_granite',
+    'graveyard:tg_diorite',
+    'graveyard:tg_stone',
+    'graveyard:tg_podzol',
     'titanium:block_test',
     'titanium:block_twenty_four_test',
     'titanium:block_asset_test',
@@ -34,6 +46,13 @@ onEvent('rei.hide.items', event => {
     'supplementaries:placeable_item',
     'valhelsia_tweaks:birthday_cake', // Seasonal stuff should usually be a surprise.
     'valhelsia_tweaks:valhelsia_firework_rocket',
+    'valhelsia_structures:stone',
+    'valhelsia_structures:granite',
+    'valhelsia_structures:diorite',
+    'valhelsia_structures:andesite',
+    'valhelsia_structures:grass_block',
+    'valhelsia_structures:dirt',
+    'valhelsia_structures:coarse_dirt',
   ]);
 
   // Hide Disabled Items
@@ -100,6 +119,6 @@ onEvent('rei.hide.items', event => {
 
 });
 
-onEvent('rei.hide.items', event => {
+onEvent('rei.hide.fluids', event => {
   // Hide Fluids.
 });
