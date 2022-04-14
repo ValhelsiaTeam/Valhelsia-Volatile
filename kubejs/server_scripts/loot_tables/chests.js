@@ -14,7 +14,7 @@ onEvent('chest.loot_tables', event => {
   ].forEach(function(chestID) {
     event.modify(chestID, table => {
       table.addPool(pool => {
-        pool.rolls = [0, 3];
+        pool.rolls = [1, 3];
         pool.addItem('farmersdelight:cooked_bacon', 18, [2, 3]);
         pool.addItem('farmersdelight:cooked_cod_slice', 18, [2, 3]);
         pool.addItem('farmersdelight:cooked_salmon_slice', 18, [2, 3]);
@@ -29,6 +29,9 @@ onEvent('chest.loot_tables', event => {
         pool.addItem('farmersdelight:cutting_board', 6);
         pool.addItem('farmersdelight:iron_knife', 4);
         pool.addItem('farmersdelight:rope', 10, [3, 9]);
+        pool.addItem('farmersrespite:kettle', 3);
+        pool.addItem('farmersrespite:tea_seeds', 10, [2, 6]);
+        pool.addItem('farmersrespite:coffee_beans', 10, [2, 6]);
       });
     });
   });
@@ -36,7 +39,7 @@ onEvent('chest.loot_tables', event => {
   // Additional Forge Chest Loot
   event.modify('valhelsia_structures:forge', table => {
     table.addPool(pool => {
-      pool.rolls = [0, 2];
+      pool.rolls = [1, 3];
       pool.addItem('forbidden_arcanus:stone_blacksmith_gavel', 15);
       pool.addItem('forbidden_arcanus:iron_blacksmith_gavel', 10);
       pool.addItem('forbidden_arcanus:diamond_blacksmith_gavel', 2);
@@ -45,6 +48,11 @@ onEvent('chest.loot_tables', event => {
       pool.addItem('chiselsandbits:chisel_diamond', 1);
       pool.addItem('immersiveengineering:ingot_steel', 7, [1, 3]);
       pool.addItem('pneumaticcraft:ingot_iron_compressed', 6, [1, 3]);
+      pool.addItem('moreminecarts:silica_steel', 6, [1, 3]);
+      pool.addItem('minecraft:raw_iron', 10, [3, 6]);
+      pool.addItem('minecraft:raw_gold', 7, [2, 5]);
+      pool.addItem('minecraft:raw_copper', 7, [2, 5]);
+      pool.addItem('minecraft:copper_ingot', 7, [1, 3]);
     });
   });
 
