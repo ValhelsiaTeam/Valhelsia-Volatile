@@ -1,7 +1,26 @@
-// priority: 0
-// Valhelsia: Volatile
-// REI Blacklist
+// priority: 1
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file REI Blacklist for Valhelsia: Volatile.
+ * 
+ * For consistency, Item / Fluid IDs should be in the order of Minecraft entries first, then by mod in alphabetical order.
+ * Separate hide method calls are used to group by removal reason - first are general clutter, second are disabled items / fluids.
+ *  
+ */
+
+/**
+ * Hide items within REI.
+ */
 onEvent('rei.hide.items', event => {
 
   // Hide debug items, logos, and similar clutter.
@@ -22,6 +41,9 @@ onEvent('rei.hide.items', event => {
     'citadel:effect_item',
     'citadel:fancy_item',
     'create:copper_backtank_placeable',
+    'create:minecart_contraption',
+    'create:furnace_minecart_contraption',
+    'create:chest_minecart_contraption',
     'graveyard:tg_rooted_dirt',
     'graveyard:tg_tuff',
     'graveyard:tg_moss_block',
@@ -44,8 +66,6 @@ onEvent('rei.hide.items', event => {
     'immersiveengineering:fake_icon_drillbreak',
     'immersiveengineering:fake_icon_ravenholm',
     'supplementaries:placeable_item',
-    'valhelsia_tweaks:birthday_cake', // Seasonal stuff should usually be a surprise.
-    'valhelsia_tweaks:valhelsia_firework_rocket',
     'valhelsia_structures:stone',
     'valhelsia_structures:granite',
     'valhelsia_structures:diorite',
@@ -53,6 +73,8 @@ onEvent('rei.hide.items', event => {
     'valhelsia_structures:grass_block',
     'valhelsia_structures:dirt',
     'valhelsia_structures:coarse_dirt',
+    'valhelsia_tweaks:birthday_cake', // Seasonal stuff should usually be a surprise.
+    'valhelsia_tweaks:valhelsia_firework_rocket',
   ]);
 
   // Hide Disabled Items
@@ -119,6 +141,12 @@ onEvent('rei.hide.items', event => {
 
 });
 
+/**
+ * Hide fluids within REI.
+ */
 onEvent('rei.hide.fluids', event => {
   // Hide Fluids.
+  //event.hide([
+  // // Placeholder - none for now.
+  //]);
 });
