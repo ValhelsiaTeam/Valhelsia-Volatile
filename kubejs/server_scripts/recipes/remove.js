@@ -1,7 +1,27 @@
 // priority: 100
-// Valhelsia: Volatile
-// Removal of unused, duplicate, or otherwise undesired recipes.
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Recipe removals for Valhelsia: Volatile.
+ * 
+ * If intending to replace the recipe with a new one (be it differing input or output), 
+ * it is preferable to use replace instead of remove, if practical.
+ * @see replace.js
+ * 
+ */
+
+/**
+ * Recipe Removal Event Handler (to be used for recipe removal only).
+ */
 onEvent('recipes', function (event) {
 
   // Remove recipes by recipe ID.
@@ -18,14 +38,14 @@ onEvent('recipes', function (event) {
     'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
     'immersiveengineering:crafting/nugget_copper_to_copper_ingot', // Redundant recipe.
   ].forEach(function (remove) {
-    event.remove({id: remove})
+    event.remove({id: remove});
   });
 
   // Remove recipes by input.
   [
     'byg:chain_plating', // Redundant Item.
   ].forEach(function (remove) {
-    event.remove({output: remove})
+    event.remove({output: remove});
   });
 
   // Remove recipes by output.
@@ -68,7 +88,7 @@ onEvent('recipes', function (event) {
     'mekanismtools:lapis_lazuli_boots',
     'mekanismtools:lapis_lazuli_shield',
   ].forEach(function (remove) {
-    event.remove({output: remove})
+    event.remove({output: remove});
   });
 
 });

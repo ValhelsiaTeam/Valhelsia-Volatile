@@ -1,7 +1,22 @@
 // priority: 110
-// Valhelsia: Volatile
-// Entity Type Tags
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Entity Type Tags for Valhelsia: Volatile
+ */
+
+/**
+ * Entity Type Tag Event Handler
+ */
 onEvent('tags.entity_type', event => {
 
   // Add Halloween Event Candy to Spoopy Mobs

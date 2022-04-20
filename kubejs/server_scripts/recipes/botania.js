@@ -1,7 +1,25 @@
 // priority: 10
-// Valhelsia: Volatile
-// Botania Additions & Compatibility
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Recipe additions for Botania's crafting methods.
+ * 
+ * Includes templates for adding Pure Daisy and Mana Infusion
+ * recipes (with variants for each catalyst, as well as no catalyst).
+ */
+
+/**
+ * Botania Recipe Event Handler
+ */
 onEvent('recipes', event => {
 
   // Pure Daisy Recipe Template
@@ -49,11 +67,11 @@ onEvent('recipes', event => {
 
   const conj2xPlant = (plant) => {
     conjuration(Item.of(plant, 2), plant, 800);
-  }
+  };
 
   const conj2xLeaves = (leaves) => {
     conjuration(Item.of(leaves, 2), leaves, 2000);
-  }
+  };
 
   // Mana Infusion (without catalyst) Recipe Template
   const infusion = (output, input, mana) => {

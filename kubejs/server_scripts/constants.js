@@ -1,6 +1,18 @@
 // priority: 9001
-// Valhelsia: Volatile
-// Constants
+
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Global Constants for use in other scripts.
+ */
 
 const AKASHIC_TOME_NBT = '{"akashictome:data":{alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},botania:{Count:1b,id:"botania:lexicon"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},oc2:{Count:1b,id:"oc2:manual"},patchouli:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}},patchouli_0:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_0","patchouli:book":"engineersdecor:engineersdecor_manual"}},patchouli_1:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_1","patchouli:book":"littlelogistics:guide"}},rftoolsbase:{Count:1b,id:"rftoolsbase:manual"},rootsclassic:{Count:1b,id:"rootsclassic:runic_tablet"}}}';
 

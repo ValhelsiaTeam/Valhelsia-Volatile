@@ -1,7 +1,27 @@
 // priority: 10
-// Valhelsia: Volatile
-// Farmer's Delight Additions & Compatibility
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Recipe additions for Farmer's Delight's crafting methods.
+ * 
+ * Includes templates for adding cutting board or cooking pot recipes,
+ * including presets for different categories of cutting board recipe
+ * (eg. stripping, chopping, cutting).
+ * 
+ */
+
+/**
+ * Farmer's Delight Recipe Event Handler
+ */
 onEvent('recipes', function (event) {
 
   // Cutting Board Axe Stripping Recipe Template

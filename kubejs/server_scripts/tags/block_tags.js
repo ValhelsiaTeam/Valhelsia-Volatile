@@ -1,7 +1,25 @@
 // priority: 110
-// Valhelsia: Volatile
-// Block Tags
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
 
+/**
+ * @file Block Tag Additions for Valhelsia: Volatile.
+ * 
+ * These tags differ from item tags in that they impact the block form only,
+ * and therefore mainly have in-world effects. 
+ * 
+ */
+
+/**
+ * Block Tag Event Handler.
+ */
 onEvent('tags.blocks', event => {
 
   // Ores

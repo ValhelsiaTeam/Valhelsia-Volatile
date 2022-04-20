@@ -1,16 +1,32 @@
 // priority: 100
-// Valhelsia: Volatile
-// Recipe Input & Output Replacements
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Recipe input / output replacements for Valhelsia: Volatile.
+ * 
+ * Contains several convenience functions for frequently used removal approaches.
+ * The majority of the recipe changes in this script are to convert recipe inputs to
+ * use tags instead of specific items, or adjusting the output where we have a prefered mod to use.
+ * 
+ */
+
+/**
+ * Recipe Replacement Event Handler
+ */
 onEvent('recipes', function (event) {
 
-  const replaceInputID = (id, from, to) => {
-    event.replaceInput({id: id}, from, to, true)
-  };
-
-  const replaceInput = (from, to) => {
-    event.replaceInput({}, from, to, true)
-  };
+  // Convenience Functions
+  const replaceInputID = (id, from, to) => { event.replaceInput({id: id}, from, to, true)};
+  const replaceInput = (from, to) => { event.replaceInput({}, from, to, true)};
 
   // Fix BYG's use of the Fabric tag for lecterns instead of the Forge tag when changing the Lectern recipe.
   replaceInputID('minecraft:lectern', '#c:bookshelves', '#forge:bookshelves');

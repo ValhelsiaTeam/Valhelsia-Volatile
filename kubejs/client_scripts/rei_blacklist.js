@@ -19,7 +19,7 @@
  */
 
 /**
- * Hide items within REI.
+ * REI Item Hiding Event Handler
  */
 onEvent('rei.hide.items', event => {
 
@@ -142,7 +142,7 @@ onEvent('rei.hide.items', event => {
 });
 
 /**
- * Hide fluids within REI.
+ * REI Fluid Hiding Event Handler
  */
 onEvent('rei.hide.fluids', event => {
   // Hide Fluids.

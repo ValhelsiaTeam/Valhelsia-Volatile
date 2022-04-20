@@ -1,7 +1,27 @@
 // priority: 10
-// Valhelsia: Volatile
-// Shaped Crafting Recipes
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Shaped recipe additions for Valhelsia: Volatile.
+ * 
+ * Contains several convenience functions for frequently used shapes.
+ * 
+ * @see shapeless.js
+ * 
+ */
+
+/**
+ * Shaped Recipe Event Handler
+ */
 onEvent('recipes', function (event) {
   // Convenience Functions:
   let shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};

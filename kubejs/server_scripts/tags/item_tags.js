@@ -1,8 +1,26 @@
 // priority: 110
-// Valhelsia: Volatile
-// Item Tags
-// These are mostly for recipe input unification, but sometimes have other uses.
 
+//   __   ___   _    _  _ ___ _    ___ ___   _   
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\  
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \ 
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\
+//     __   _____  _      _ _____ ___ _    ___     
+//     \ \ / / _ \| |    /_\_   _|_ _| |  | __|    
+//      \ V / (_) | |__ / _ \| |  | || |__| _|     
+//       \_/ \___/|____/_/ \_\_| |___|____|___|    
+//
+
+/**
+ * @file Item Tag Additions for Valhelsia: Volatile.
+ * 
+ * These are mostly for recipe input unification, but sometimes have other uses.
+ * 
+ */
+
+/**
+ * Item Tag Event Handler (to be used for tag addition only).
+ * @see item_tags_remove.js
+ */
 onEvent('tags.items', event => {
 
   // Crops
