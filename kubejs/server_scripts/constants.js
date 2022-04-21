@@ -14,8 +14,17 @@
  * @file Global Constants for use in other scripts.
  */
 
+/**
+ * NBT data for the filled Akashic Tome. Should be updated whenever new recipe books are added to the pack.
+ */
 const AKASHIC_TOME_NBT = '{"akashictome:data":{alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},botania:{Count:1b,id:"botania:lexicon"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},oc2:{Count:1b,id:"oc2:manual"},patchouli:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}},patchouli_0:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_0","patchouli:book":"engineersdecor:engineersdecor_manual"}},patchouli_1:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_1","patchouli:book":"littlelogistics:guide"}},rftoolsbase:{Count:1b,id:"rftoolsbase:manual"},ars_nouveau:{Count:1b,id:"ars_nouveau:worn_notebook"},rootsclassic:{Count:1b,id:"rootsclassic:runic_tablet"}}}';
 
+/**
+ * Minecraft's default colors, as used in vanilla item IDs and by most mods.
+ * Note: Some mods use abnormal names for colors, such as Absent By Design (which uses 'silver' in some places 
+ * instead of 'light_gray'), so this shouldn't be used blindly without verifying that the mod uses standard
+ * color names.
+ */
 const COLORS = [
   'white',
   'orange',
@@ -35,6 +44,9 @@ const COLORS = [
   'black'
 ];
 
+/**
+ * Item IDs for all leaf carpets (or BYG's foliage, which is essentially the same thing).
+ */
 const ALL_LEAF_CARPETS = [
   'byg:pink_cherry_foliage',
   'byg:white_cherry_foliage',
@@ -55,6 +67,9 @@ const ALL_LEAF_CARPETS = [
   'quark:orange_blossom_leaf_carpet',
 ];
 
+/**
+ * Item IDs of all BYG leaves.
+ */
 const ALL_BYG_LEAVES = [
   'byg:aspen_leaves',
   'byg:baobab_leaves',
