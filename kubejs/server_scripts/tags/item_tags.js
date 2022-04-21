@@ -76,9 +76,12 @@ onEvent('tags.items', event => {
   event.add('forge:ingots', [
     'botania:gaia_ingot',
     'byg:pendorite_ingot',
+    'graveyard:dark_iron_ingot',
     'immersiveengineering:ingot_hop_graphite',
     'undergarden:forgotten_ingot',
   ]);
+
+  event.add('forge:ingots/dark_iron', 'graveyard:dark_iron_ingot');
 
   // Nuggets
   event.add('forge:nuggets', [
