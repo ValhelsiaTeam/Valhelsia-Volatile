@@ -16,6 +16,8 @@
  * Includes templates for adding Fermenter and Squeezer recipes.
  * Other recipes are handled via KubeJS Immersive Engineering.
  * 
+ * @see crushing.js for crushing recipes.
+ * 
  */
 
 /**
@@ -23,7 +25,12 @@
  */
 onEvent('recipes', event => {
 
-  // Fermenter Recipe Template
+  /**
+   * Creates a Fermenter recipe for Immersive Engineering.
+   * @param {*} fluid The fluid to create.
+   * @param {*} input The ingredient to ferment.
+   * @param {*} amount The amount of fluid to create (in millibuckets).
+   */
   const fermenter = (fluid, input, amount) => {
     event.custom({
         type: 'immersiveengineering:fermenter',
@@ -36,7 +43,12 @@ onEvent('recipes', event => {
     });
   };
 
-  // Squeezer Recipe Template
+  /**
+   * Creates a Squeezer recipe for Immersive Engineering.
+   * @param {*} fluid The fluid to create.
+   * @param {*} input The ingredient to squeeze.
+   * @param {*} amount The amount of fluid to create (in millibuckets).
+   */
   const squeezer = (fluid, input, amount) => {
     event.custom({
         type: 'immersiveengineering:squeezer',
@@ -50,9 +62,25 @@ onEvent('recipes', event => {
   };
 
   // ----- Fermenter Recipes -----
+  fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80);
 
   // ----- Squeezer Recipes -----
-  squeezer('immersiveengineering:plantoil', '#forge:seeds/hemp', 120)
-  squeezer('immersiveengineering:plantoil', '#forge:seeds/flax', 100)
+  squeezer('immersiveengineering:plantoil', '#forge:seeds/hemp', 120);
+  squeezer('immersiveengineering:plantoil', '#forge:seeds/flax', 100);
+  squeezer('immersiveengineering:plantoil', 'forbidden_arcanus:golden_orchid_seeds', 40);
+
+  // ----- Other Recipes -----
+
+  // Additional Blast Furnace Fuel Sources
+  event.recipes.immersiveengineeringBlastFurnaceFuel('#mekanism:enriched/carbon').time(600);
+
+  // Additional Fertilizers
+  event.recipes.immersiveengineeringFertilizer('minecolonies:compost').growthModifier(1.5);
+
+  // Cloche Recipes
+  // TODO
+
+  // Metal Press Recipes
+  // TODO
 
 });
