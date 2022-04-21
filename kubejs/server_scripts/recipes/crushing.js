@@ -24,8 +24,8 @@ onEvent('recipes', event => {
   /**
    * Creates a crushing recipe for multiple mods.
    * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
-   * @param {*} output The resulting crushed item(s).
-   * @param {*} input A single ingredient to crush.
+   * @param {(string|Item)} output The resulting crushed item(s).
+   * @param {(string|Ingredient)} input A single ingredient to crush.
    */
   const crush = (output, input) => {
     // TODO: Rework this to allow secondary outputs to work - not entirely simple since IE and Create have very

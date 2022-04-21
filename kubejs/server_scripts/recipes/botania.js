@@ -25,8 +25,8 @@ onEvent('recipes', event => {
   /**
    * Creates a Pure Daisy recipe.
    * Whichever block is specified as the input will be converted into the output block over time.
-   * @param {*} output The block ID of the resulting block.
-   * @param {*} input The block ID of the block to convert.
+   * @param {string} output The block ID of the resulting block.
+   * @param {string} input The block ID of the block to convert.
    */
   const purify = (output, input) => {
     event.custom({
@@ -43,10 +43,10 @@ onEvent('recipes', event => {
 
   /**
    * Creates an Alchemy Catalyst Mana Infusion recipe.
-   * @param {*} output One or more output items. Usually just one as alchemy is used for transformation.
-   * @param {*} input A single input ingredient.
-   * @param {*} mana The mana cost of the infusion. For reference, logs tend to cost 40 and saplings 120 mana.
-   * @param {*} group The Botania item group ID to add the recipe to. Examples: 'botania:log_cycle', 'botania:sapling_cycle', 'botania:shrub_cycle'.
+   * @param {(string|Item)} output One or more output items. Usually just one as alchemy is used for transformation.
+   * @param {(string|Ingredient)} input A single input ingredient.
+   * @param {number} mana The mana cost of the infusion. For reference, logs tend to cost 40 and saplings 120 mana.
+   * @param {string} group The Botania item group ID to add the recipe to. Examples: 'botania:log_cycle', 'botania:sapling_cycle', 'botania:shrub_cycle'.
    */
   const alchemy = (output, input, mana, group) => {
     event.custom({
@@ -64,9 +64,9 @@ onEvent('recipes', event => {
 
   /**
    * Creates a Conjuration Catalyst Mana Infusion recipe.
-   * @param {*} output One or more output item(s). Usually exactly two as conjuration is used for doubling.
-   * @param {*} input A single input ingredient.
-   * @param {*} mana The mana cost of the infusion. For reference, plants tend to cost 800 mana and leaves cost 2000.
+   * @param {(string|Item)} output One or more output item(s). Usually exactly two as conjuration is used for doubling.
+   * @param {(string|Ingredient)} input A single input ingredient.
+   * @param {number} mana The mana cost of the infusion. For reference, plants tend to cost 800 mana and leaves cost 2000.
    */
   const conjuration = (output, input, mana) => {
     event.custom({
@@ -99,9 +99,9 @@ onEvent('recipes', event => {
 
   /**
    * Creates a Mana Infusion recipe (without any catalyst being present).
-   * @param {*} output One or more output items.
-   * @param {*} input A single input item.
-   * @param {*} mana The mana cost of the infusion. See Botania's built-in recipes for reference.
+   * @param {(string|Item)} output One or more output items.
+   * @param {(string|Ingredient)} input A single input item.
+   * @param {number} mana The mana cost of the infusion. See Botania's built-in recipes for reference.
    */
   const infusion = (output, input, mana) => {
     event.custom({

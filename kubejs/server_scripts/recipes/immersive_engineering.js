@@ -29,7 +29,7 @@ onEvent('recipes', event => {
    * Creates a Fermenter recipe for Immersive Engineering.
    * @param {*} fluid The fluid to create.
    * @param {*} input The ingredient to ferment.
-   * @param {*} amount The amount of fluid to create (in millibuckets).
+   * @param {number} amount The amount of fluid to create (in millibuckets).
    */
   const fermenter = (fluid, input, amount) => {
     event.custom({
@@ -47,7 +47,7 @@ onEvent('recipes', event => {
    * Creates a Squeezer recipe for Immersive Engineering.
    * @param {*} fluid The fluid to create.
    * @param {*} input The ingredient to squeeze.
-   * @param {*} amount The amount of fluid to create (in millibuckets).
+   * @param {number} amount The amount of fluid to create (in millibuckets).
    */
   const squeezer = (fluid, input, amount) => {
     event.custom({

@@ -23,8 +23,8 @@
  onEvent('recipes', event => {
   /**
    * Creates a sawing recipe for multiple mods.
-   * @param {*} output The recipe crushed item(s).
-   * @param {*} input A single ingredient to crush.
+   * @param {(string|Item)} output The resulting item(s).
+   * @param {(string|Ingredient)} input A single ingredient to saw.
    */
   const saw = (output, input) => {
     event.recipes.immersiveengineeringSawmill(output, input);

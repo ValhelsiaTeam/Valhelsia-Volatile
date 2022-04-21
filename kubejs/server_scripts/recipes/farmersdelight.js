@@ -27,8 +27,8 @@ onEvent('recipes', function (event) {
   /**
    * Creates an Axe Stripping recipe for the Farmer's Delight Cutting Board.
    * Automatically adds the tree bark as one output.
-   * @param {*} output The resulting stripped log. 
-   * @param {*} input An unstripped log to be stripped.
+   * @param {(string|Item)} output The resulting stripped log. 
+   * @param {(string|Ingredient)} input An unstripped log to be stripped.
    */
   const strip = (output, input) => {
     event.custom({
@@ -50,8 +50,8 @@ onEvent('recipes', function (event) {
 
   /**
    * Creates an Axe Chopping recipe for the Farmer's Delight Cutting Board.
-   * @param {*} output The output item.
-   * @param {*} input The input ingredient.
+   * @param {(string|Item)} output The output item.
+   * @param {(string|Ingredient)} input The input ingredient.
    */
   const chop = (output, input) => {
     event.custom({
@@ -71,8 +71,8 @@ onEvent('recipes', function (event) {
 
   /**
    * Creates a Knife Cutting recipe for the Farmer's Delight Cutting Board.
-   * @param {*[]} output An array of items to output.
-   * @param {*} input The input ingredient(s).
+   * @param {Item[]} output An array of items to output.
+   * @param {(string|Ingredient)} input The input ingredient(s).
    */
   const cut = (output, input) => {
     event.custom({
@@ -90,9 +90,9 @@ onEvent('recipes', function (event) {
   /**
    * Creates a Cooking Pot recipe for Farmer's Delight.
    * Automatically grants 0.2 XP and takes 200 ticks to cook.
-   * @param {*} output An output item.
-   * @param {*} input An input ingredient.
-   * @param {*} container An item to use as a container (eg. 'minecraft:bowl').
+   * @param {(string|Item)} output An output item.
+   * @param {(string|Ingredient)} input An input ingredient.
+   * @param {(string|Item)} container An item to use as a container (eg. 'minecraft:bowl').
    */
   const pot = (output, input, container) => {
     event.custom({
