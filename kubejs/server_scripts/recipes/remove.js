@@ -27,16 +27,17 @@ onEvent('recipes', function (event) {
   // Remove recipes by recipe ID.
   [
     'byg:chain_plating', // Redundant Item.
-    'undergarden:smoke_glitterkelp', // Redundant Recipe.
-    'undergarden:smelt_glitterkelp', // Redundant Recipe.
-
-    // Immersive Engineering
+    'graveyard:dark_iron_ingot', // Crafting method changing.
     'immersiveengineering:crafting/gold_ingot_from_dust_from_blasting', // Duplicate recipe.
     'immersiveengineering:crafting/gold_ingot_from_dust', // Duplicate recipe.
     'immersiveengineering:crafting/iron_ingot_from_dust_from_blasting', // Duplicate recipe.
     'immersiveengineering:crafting/iron_ingot_from_dust', // Duplicate recipe.
     'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
     'immersiveengineering:crafting/nugget_copper_to_copper_ingot', // Redundant recipe.
+    'undergarden:smoke_glitterkelp', // Redundant Recipe.
+    'undergarden:smelt_glitterkelp', // Redundant Recipe.
+
+    // Immersive Engineering
   ].forEach(function (remove) {
     event.remove({id: remove});
   });
