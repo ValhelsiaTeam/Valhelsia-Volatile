@@ -56,6 +56,8 @@ onEvent('tags.items', event => {
   event.add('forge:fruits/melon', 'minecraft:melon_slice');
   event.add('forge:fruits/prickly_pear', 'ecologics:prickly_pear');
 
+  /*
+  // Removed temporarily to see if that's the cause of the loot table injection into leaves.
   event.add('rootsclassic:berries', [
     'minecraft:sweet_berries',
     'minecraft:glow_berries',
@@ -64,6 +66,7 @@ onEvent('tags.items', event => {
     'byg:nightshade_berries',
     'byg:blueberries',
   ]);
+  */
 
   // Feathers
   event.add('forge:feathers', [
