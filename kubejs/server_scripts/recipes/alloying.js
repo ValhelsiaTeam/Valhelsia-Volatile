@@ -52,6 +52,9 @@ onEvent('recipes', event => {
     event.remove({id: remove});
   });
 
+  // Minecraft
+  alloy('minecraft:netherite_ingot', ['4x minecraft:netherite_scrap', '4x #forge:ingots/gold']);
+
   // Create
   alloy('2x create:brass_ingot', ['#forge:ingots/copper', '#forge:ingots/zinc']);
   // TODO: Look through Create mixing recipes - there's plenty more that should be removed and moved here
@@ -59,6 +62,8 @@ onEvent('recipes', event => {
   
   // Forbidden and Arcanus
   alloy('forbidden_arcanus:obsidian_ingot', ['4x #forge:dusts/obsidian', '4x #forge:nuggets/iron']);
+  alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
+  alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
 
   // The Graveyard
   alloy('graveyard:dark_iron_ingot', ['#forge:ingots/iron', 'graveyard:corruption']);
