@@ -119,6 +119,13 @@ onEvent('tags.items', event => {
   event.add('forge:storage_blocks/raw_froststeel', 'undergarden:raw_froststeel_block');
   event.add('forge:storage_blocks/forgotten_metal', 'undergarden:forgotten_block');
 
+  // Dusts
+  event.add('forge:dusts', [
+    'create:powdered_obsidian',
+  ]);
+
+  event.add('forge:dusts/obsidian', 'create:powdered_obsidian');
+
   // Seeds
   event.add('forge:seeds'), [
     'druidcraftrg:hemp_seeds',

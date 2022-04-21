@@ -14,6 +14,7 @@
  * @file Crushing recipes for Valhelsia: Volatile.
  * 
  * Includes a function to add crushing recipes to multiple mods at the same time.
+ * Also replaces some existing crushing recipes in order to unify them between mods.
  */
 
 /**

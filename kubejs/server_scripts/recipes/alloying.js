@@ -14,6 +14,7 @@
  * @file Alloying recipes for Valhelsia: Volatile.
  * 
  * Includes a function to add alloying recipes to multiple mods at the same time.
+ * Also replaces some existing alloying recipes in order to unify them between mods.
  */
 
 /**
