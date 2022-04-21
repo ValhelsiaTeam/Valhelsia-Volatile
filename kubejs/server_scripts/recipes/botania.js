@@ -22,7 +22,12 @@
  */
 onEvent('recipes', event => {
 
-  // Pure Daisy Recipe Template
+  /**
+   * Creates a Pure Daisy recipe.
+   * Whichever block is specified as the input will be converted into the output block over time.
+   * @param {*} output The block ID of the resulting block.
+   * @param {*} input The block ID of the block to convert.
+   */
   const purify = (output, input) => {
     event.custom({
       type: 'botania:pure_daisy',
@@ -36,7 +41,13 @@ onEvent('recipes', event => {
     });
   };
 
-  // Alchemy Catalyst Recipe Template
+  /**
+   * Creates an Alchemy Catalyst Mana Infusion recipe.
+   * @param {*} output One or more output items. Usually just one as alchemy is used for transformation.
+   * @param {*} input A single input ingredient.
+   * @param {*} mana The mana cost of the infusion. For reference, logs tend to cost 40 and saplings 120 mana.
+   * @param {*} group The Botania item group ID to add the recipe to. Examples: 'botania:log_cycle', 'botania:sapling_cycle', 'botania:shrub_cycle'.
+   */
   const alchemy = (output, input, mana, group) => {
     event.custom({
       type: 'botania:mana_infusion',
@@ -51,7 +62,12 @@ onEvent('recipes', event => {
     });
   };
 
-  // Conjuration Catalyst Recipe Template
+  /**
+   * Creates a Conjuration Catalyst Mana Infusion recipe.
+   * @param {*} output One or more output item(s). Usually exactly two as conjuration is used for doubling.
+   * @param {*} input A single input ingredient.
+   * @param {*} mana The mana cost of the infusion. For reference, plants tend to cost 800 mana and leaves cost 2000.
+   */
   const conjuration = (output, input, mana) => {
     event.custom({
       type: 'botania:mana_infusion',
@@ -65,15 +81,28 @@ onEvent('recipes', event => {
     });
   };
 
+  /**
+   * A shortcut to creating a plant-doubling Conjuration Catalyst Mana Infusion recipe.
+   * @param {*} plant The plant item to double. Acts as both the input and output.
+   */
   const conj2xPlant = (plant) => {
     conjuration(Item.of(plant, 2), plant, 800);
   };
 
+  /**
+   * A shortcut to creating a leaf-doubling Conjuration Catalyst Mana Infusion recipe.
+   * @param {*} leaves The leaf item to double. Acts as both the input and output.
+   */
   const conj2xLeaves = (leaves) => {
     conjuration(Item.of(leaves, 2), leaves, 2000);
   };
 
-  // Mana Infusion (without catalyst) Recipe Template
+  /**
+   * Creates a Mana Infusion recipe (without any catalyst being present).
+   * @param {*} output One or more output items.
+   * @param {*} input A single input item.
+   * @param {*} mana The mana cost of the infusion. See Botania's built-in recipes for reference.
+   */
   const infusion = (output, input, mana) => {
     event.custom({
       type: 'botania:mana_infusion',

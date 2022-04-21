@@ -24,8 +24,11 @@ onEvent('recipes', event => {
 
   /**
    * Creates an alloy recipe for multiple mods.
-   * @param {*} output 
-   * @param {*[]} inputs 
+   * If the inputs parameter has exactly two ingredients then the recipe will be added to all supported mods,
+   * and if it has more than two then it will only be added to Create (which supports a greater number of ingredients).
+   * 
+   * @param {*} output The resulting output alloy item(s).
+   * @param {*[]} inputs An array of ingredients to use as inputs. Must have at least two ingredients.
    */
   const alloy = (output, inputs) => {
     // Create
@@ -37,6 +40,9 @@ onEvent('recipes', event => {
     if (inputs.length == 2) {
       event.recipes.immersiveengineeringAlloy(output, inputs[0], inputs[1]);
     }
+
+    // TODO: Maybe repurpose Mekanism's Combiner as a source of generic alloys in Mekanism.
+    //       Requires KubeJS Mekanism to be updated to Minecraft 1.18.2 first.
   };
 
   // Remove unused alloying recipes.
