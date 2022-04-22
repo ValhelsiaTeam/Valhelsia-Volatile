@@ -83,7 +83,7 @@ onEvent('recipes', event => {
   // Mekanism
   alloy('4x mekanism:ingot_bronze', ['3x #forge:ingots/copper', '#forge:ingots/tin']);
   alloy('4x mekanism:ingot_bronze', ['3x #forge:dusts/copper', '#forge:dusts/tin']);
-  alloy('mekanism:refined_obsidian_dust', ['#forge:dusts/obsidian', '#forge:dusts/diamond']);
+  alloy('mekanism:dust_refined_obsidian', ['#forge:dusts/obsidian', '#forge:dusts/diamond']);
   alloy('mekanism:alloy_infused', ['#forge:ingots/iron', '#forge:dusts/redstone']);
   alloy('mekanism:alloy_reinforced', ['#forge:alloys/advanced', '2x #forge:dusts/diamond']);
   alloy('mekanism:alloy_atomic', ['#forge:alloys/elite', '4x #forge:dusts/refined_obsidian']);
