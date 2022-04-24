@@ -22,7 +22,7 @@
 onEvent('recipes', function (event) {
 
   // Stonecutting Recipe Template for items that can be converted back and forth freely.
-  let scReversible = (itemA, itemB) => {
+  const scReversible = (itemA, itemB) => {
     event.stonecutting(itemA, itemB);
     event.stonecutting(itemB, itemA);
   };
