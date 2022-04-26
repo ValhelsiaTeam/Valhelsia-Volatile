@@ -167,6 +167,20 @@ onEvent('tags.items', event => {
     'quark:sandstone_bricks',
   ]);
 
+  event.add('forge:sandstone/crystal', [
+    'blue_skies:crystal_sandstone',
+    'blue_skies:chiseled_crystal_sandstone',
+    'blue_skies:cut_crystal_sandstone',
+    'blue_skies:smooth_crystal_sandstone',
+  ]);
+
+  event.add('forge:sandstone/midnight', [
+    'blue_skies:midnight_sandstone',
+    'blue_skies:chiseled_midnight_sandstone',
+    'blue_skies:cut_midnight_sandstone',
+    'blue_skies:smooth_midnight_sandstone',
+  ]);
+
   event.add('forge:sandstone/pink', [
     'byg:pink_sandstone',
     'byg:pink_chiseled_sandstone',

@@ -34,16 +34,51 @@ onEvent('recipes', event => {
     event.recipes.immersiveengineeringCrusher(output, input);
     //event.recipes.mekanismCrushing(output, input); // TODO: Add back once KJS Mekanism updates.
     event.recipes.createCrushing(output, input);
+
+    // TODO: Add Ars Nouveau Crushing.
+    // TODO: Add MineColonies Crushing.
+  };
+
+  /**
+   * Creates a milling recipe for multiple mods.
+   * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
+   * @param {(string|Item)} output The resulting milled item(s).
+   * @param {(string|Ingredient)} input A single ingredient to mill.
+   */
+   const mill = (output, input) => {
+    event.recipes.createMilling(output, input);
+    crush(output, input);
   };
 
   // Remove unused crushing recipes.
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
   // For removal of crushing recipes with no replacement, use remove.js instead.
   [
-    // Placeholder.
+    'create:milling/granite',
+    'create:milling/sandstone',
+    'create:milling/terracotta',
+    //'mekanism:crushing/soul_soil_to_soul_sand', // Uncomment after KJS Mekanism is added.
   ].forEach(function (remove) {
     event.remove({id: remove});
   });
 
-  // TODO: Add crushing recipes here.
+  // Crushing
+  crush('minecraft:soul_sand', 'minecraft:soul_soil');
+  crush('minecraft:soul_sand', '#forge:sandstone/soul');
+  crush('byg:end_sand', 'minecraft:end_stone');
+
+  // Milling + Crushing
+  mill('minecraft:red_sand', 'minecraft:granite');
+  mill('minecraft:red_sand', '#forge:sandstone/red');
+  mill('minecraft:red_sand', 'minecraft:terracotta');
+  mill('minecraft:sand', '#forge:sandstone/colorless');
+  mill('blue_skies:crystal_sand', '#forge:sandstone/crystal');
+  mill('blue_skies:midnight_sand', '#forge:sandstone/midnight');
+  mill('byg:black_sand', '#forge:sandstone/black');
+  mill('byg:blue_sand', '#forge:sandstone/blue');
+  mill('byg:pink_sand', '#forge:sandstone/pink');
+  mill('byg:purple_sand', '#forge:sandstone/purple');
+  mill('byg:white_sand', '#forge:sandstone/white');
+  mill('byg:windswept_sand', '#forge:sandstone/windswept');
+  mill('forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
 });
