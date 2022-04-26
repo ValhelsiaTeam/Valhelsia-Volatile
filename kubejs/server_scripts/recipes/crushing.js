@@ -63,15 +63,17 @@ onEvent('recipes', event => {
   });
 
   // Crushing
-  crush('minecraft:soul_sand', 'minecraft:soul_soil');
-  crush('minecraft:soul_sand', '#forge:sandstone/soul');
+  crush('minecraft:red_sand', 'minecraft:granite');
   crush('byg:end_sand', 'minecraft:end_stone');
 
   // Milling + Crushing
-  mill('minecraft:red_sand', 'minecraft:granite');
+  // Sandstone, Terracotta, and other soft materials can be milled.
+  // Harder materials (stone, ore, gems) should be crushed instead.
   mill('minecraft:red_sand', '#forge:sandstone/red');
   mill('minecraft:red_sand', 'minecraft:terracotta');
+  mill('minecraft:soul_sand', 'minecraft:soul_soil');
   mill('minecraft:sand', '#forge:sandstone/colorless');
+  mill('minecraft:soul_sand', '#forge:sandstone/soul');
   mill('blue_skies:crystal_sand', '#forge:sandstone/crystal');
   mill('blue_skies:midnight_sand', '#forge:sandstone/midnight');
   mill('byg:black_sand', '#forge:sandstone/black');
