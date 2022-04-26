@@ -13,7 +13,7 @@
 /**
  * @file Crushing recipes for Valhelsia: Volatile.
  * 
- * Includes a function to add crushing recipes to multiple mods at the same time.
+ * Includes functions to add crushing and milling recipes to multiple mods at the same time.
  * Also replaces some existing crushing recipes in order to unify them between mods.
  */
 
@@ -22,7 +22,7 @@
  */
 onEvent('recipes', event => {
   /**
-   * Creates a crushing recipe for multiple mods.
+   * Creates a Crushing recipe for multiple mods.
    * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
    * @param {(string|Item)} output The resulting crushed item(s).
    * @param {(string|Ingredient)} input A single ingredient to crush.
@@ -40,7 +40,9 @@ onEvent('recipes', event => {
   };
 
   /**
-   * Creates a milling recipe for multiple mods.
+   * Creates a Milling recipe for multiple mods.
+   * Milling recipes are also added as crushing recipes (but not the reverse). This is in line with the way
+   * the Create mod handles Milling vs Crushing.
    * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
    * @param {(string|Item)} output The resulting milled item(s).
    * @param {(string|Ingredient)} input A single ingredient to mill.
@@ -50,9 +52,9 @@ onEvent('recipes', event => {
     crush(output, input);
   };
 
-  // Remove unused crushing recipes.
+  // Remove unused crushing/milling recipes.
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
-  // For removal of crushing recipes with no replacement, use remove.js instead.
+  // For removal of crushing/milling recipes with no replacement, use remove.js instead.
   [
     'create:milling/granite',
     'create:milling/sandstone',
@@ -68,7 +70,7 @@ onEvent('recipes', event => {
 
   // Milling + Crushing
   // Sandstone, Terracotta, and other soft materials can be milled.
-  // Harder materials (stone, ore, gems) should be crushed instead.
+  // Harder materials (stone, ore) should only be crushable, not millable.
   mill('minecraft:red_sand', '#forge:sandstone/red');
   mill('minecraft:red_sand', 'minecraft:terracotta');
   mill('minecraft:soul_sand', 'minecraft:soul_soil');
