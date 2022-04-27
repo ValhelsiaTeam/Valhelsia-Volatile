@@ -22,7 +22,7 @@
 /**
  * Shaped Recipe Event Handler
  */
-onEvent('recipes', function (event) {
+onEvent('recipes', event => {
   // Convenience Functions:
   let shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
   let shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};

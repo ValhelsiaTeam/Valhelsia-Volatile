@@ -12,16 +12,20 @@
 
 /**
  * @file Stonecutter recipe additions for Valhelsia: Volatile.
- * 
  * Includes functions for frequently used recipe templates.
  */
 
 /**
  * Stonecutting Recipe Event Handler
  */
-onEvent('recipes', function (event) {
+onEvent('recipes', event => {
 
-  // Stonecutting Recipe Template for items that can be converted back and forth freely.
+  /**
+   * Creates stonecutting recipes to convert items between each other.
+   * Typically used to convert between equivalent stones from different mods (such as Create Limestone and Quark Limestone).
+   * @param {(string|Item)} itemA An item, usually a type of raw stone.
+   * @param {(string|Item)} itemB Another item, usually a type of raw stone.
+   */
   const scReversible = (itemA, itemB) => {
     event.stonecutting(itemA, itemB);
     event.stonecutting(itemB, itemA);
