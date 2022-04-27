@@ -11,7 +11,7 @@
 //
 
 /**
- * @file Chest loot table  injection / replacement for Valhelsia: Volatile.
+ * @file Chest loot table injection / replacement for Valhelsia: Volatile.
  */
 
 /**
