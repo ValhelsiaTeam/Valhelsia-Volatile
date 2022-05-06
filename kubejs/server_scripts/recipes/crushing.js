@@ -32,9 +32,8 @@ onEvent('recipes', event => {
     //       different approaches to how they handle this (and Mekanism doesn't appear to handle it at all).
     //       Recipes with secondary outputs might end up with a separate function instead of this one.
     event.recipes.immersiveengineeringCrusher(output, input);
-    //event.recipes.mekanismCrushing(output, input); // TODO: Add back once KJS Mekanism updates.
+    event.recipes.mekanismCrushing(output, input);
     event.recipes.createCrushing(output, input);
-
     // TODO: Add Ars Nouveau Crushing.
     // TODO: Add MineColonies Crushing.
   };
@@ -59,7 +58,7 @@ onEvent('recipes', event => {
     'create:milling/granite',
     'create:milling/sandstone',
     'create:milling/terracotta',
-    //'mekanism:crushing/soul_soil_to_soul_sand', // Uncomment after KJS Mekanism is added.
+    'mekanism:crushing/soul_soil_to_soul_sand',
   ].forEach(function (remove) {
     event.remove({id: remove});
   });
