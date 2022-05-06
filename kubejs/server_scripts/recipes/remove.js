@@ -17,6 +17,12 @@
  * it is preferable to use replace instead of remove, if practical.
  * @see replace.js
  * 
+ * The Alloying and Crushing scripts also remove relevant recipes in the same script
+ * only if immediately creating a new recipe that is intended to replace that recipe
+ * (typically to add multi-mod support for a recipe).
+ * @see alloying.js
+ * @see crushing.js
+ * 
  */
 
 /**
