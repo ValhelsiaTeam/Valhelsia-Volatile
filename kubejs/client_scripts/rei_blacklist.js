@@ -15,6 +15,9 @@
  * 
  * For consistency, Item / Fluid IDs should be in the order of Minecraft entries first, then by mod in alphabetical order.
  * Separate hide method calls are used to group by removal reason - first are general clutter, second are disabled items / fluids.
+ * 
+ * Note: Valhelsia: Volatile doesn't currently have REI in it, but the event isn't called if the mod isn't installed
+ * so this file doesn't harm anything, and can be kept safely in case it is needed in future.
  *  
  */
 

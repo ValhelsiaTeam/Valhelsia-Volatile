@@ -25,5 +25,5 @@
  * JEI Information Event Handler
  */
 onEvent('jei.information', event => {
-  // TODO: JEI Information here.
+  // TODO: JEI Information here (make sure to read above information regarding translations).
 });
