@@ -96,7 +96,7 @@ onEvent('recipes', event => {
 
   /**
    * A shortcut to creating a plant-doubling Conjuration Catalyst Mana Infusion recipe.
-   * @param {*} plant The plant item to double. Acts as both the input and output.
+   * @param {(string|Item)} plant The plant item to double. Acts as both the input and output.
    */
   const conj2xPlant = (plant) => {
     conjuration(Item.of(plant, 2), plant, 800);
@@ -104,7 +104,7 @@ onEvent('recipes', event => {
 
   /**
    * A shortcut to creating a leaf-doubling Conjuration Catalyst Mana Infusion recipe.
-   * @param {*} leaves The leaf item to double. Acts as both the input and output.
+   * @param {(string|Item)} leaves The leaf item to double. Acts as both the input and output.
    */
   const conj2xLeaves = (leaves) => {
     conjuration(Item.of(leaves, 2), leaves, 2000);
@@ -202,5 +202,6 @@ onEvent('recipes', event => {
 
   // Mana Infusion Recipes
   // ---------------------
+  // None yet.
 
 });

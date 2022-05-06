@@ -69,8 +69,73 @@ onEvent('recipes', event => {
     event.recipes.mekanismCrushing(`${quantity}x mekanism:bio_fuel`, input);
   };
 
-  // TODO: Add recipes here.
+  // Bio Fuel
   // Note: When adding bio fuel crushing, use tags where practical, even if they have to be created
-  // (such as 'valhelsia:grasses' or 'valhelsia:fruits' or whatever).
+  // (such as 'valhelsia:grasses' or 'forge:fruits' or whatever).
+
+  // Remove specific biofuel crushing recipes in favour of using tags instead.
+  [
+    // Saplings
+    'mekanism:crushing/biofuel/oak_sapling',
+    'mekanism:crushing/biofuel/spruce_sapling',
+    'mekanism:crushing/biofuel/birch_sapling',
+    'mekanism:crushing/biofuel/jungle_sapling',
+    'mekanism:crushing/biofuel/acacia_sapling',
+    'mekanism:crushing/biofuel/dark_oak_sapling',
+
+    // Leaves
+    //'mekanism:crushing/biofuel/oak_leaves',
+    //'mekanism:crushing/biofuel/spruce_leaves',
+    //'mekanism:crushing/biofuel/birch_leaves',
+    //'mekanism:crushing/biofuel/jungle_leaves',
+    //'mekanism:crushing/biofuel/acacia_leaves',
+    //'mekanism:crushing/biofuel/dark_oak_leaves',
+    //'mekanism:crushing/biofuel/azalea_leaves',
+
+    // Seeds
+    'mekanism:crushing/biofuel/beetroot_seeds',
+    'mekanism:crushing/biofuel/melon_seeds',
+    'mekanism:crushing/biofuel/pumpkin_seeds',
+    'mekanism:crushing/biofuel/wheat_seeds',
+
+    // Flowers
+    'mekanism:crushing/biofuel/dandelion',
+    'mekanism:crushing/biofuel/poppy',
+    'mekanism:crushing/biofuel/blue_orchid',
+    'mekanism:crushing/biofuel/allium',
+    'mekanism:crushing/biofuel/azure_bluet',
+    'mekanism:crushing/biofuel/red_tulip',
+    'mekanism:crushing/biofuel/orange_tulip',
+    'mekanism:crushing/biofuel/white_tulip',
+    'mekanism:crushing/biofuel/pink_tulip',
+    'mekanism:crushing/biofuel/oxeye_daisy',
+    'mekanism:crushing/biofuel/cornflower',
+    'mekanism:crushing/biofuel/lily_of_the_valley',
+    'mekanism:crushing/biofuel/wither_rose',
+    'mekanism:crushing/biofuel/sunflower',
+    'mekanism:crushing/biofuel/lilac',
+    'mekanism:crushing/biofuel/rose_bush',
+    'mekanism:crushing/biofuel/peony',
+
+    // TODO: More as tags are created / expanded.
+    // See default recipes here: https://github.com/mekanism/Mekanism/tree/1.18.x/src/datagen/generated/mekanism/data/mekanism/recipes/crushing/biofuel
+  ].forEach(function (remove) {
+    event.remove({id: remove});
+  });
   
+  bioCrush('#minecraft:flowers', 5);
+  bioCrush('#minecraft:saplings', 2);
+  bioCrush('#forge:seeds', 2);
+
+  // Coal Coke -> Carbon / Enriched Carbon
+  event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
+  infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
+  infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
+
+  // Fungification
+  // TODO: Fungification
+
+  // Mossification
+  // TODO: Mossification
+
 });

@@ -23,6 +23,8 @@ onEvent('recipes', event => {
   /**
    * Creates stonecutting recipes to convert items between each other.
    * Typically used to convert between equivalent stones from different mods (such as Create Limestone and Quark Limestone).
+   * The order of the parameters doesn't make a difference.
+   * 
    * @param {(string|Item)} itemA An item, usually a type of raw stone.
    * @param {(string|Item)} itemB Another item, usually a type of raw stone.
    */
