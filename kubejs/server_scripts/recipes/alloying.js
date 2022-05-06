@@ -36,13 +36,14 @@ onEvent('recipes', event => {
     // TODO: Consider adding a flag to switch between unheated, heated, superheated mixing recipes.
     //       For now, heated is a sensible default for most alloying.
 
-    // Immersive Engineering
+    // Immersive Engineering & Mekanism
     if (inputs.length == 2) {
       event.recipes.immersiveengineeringAlloy(output, inputs[0], inputs[1]);
+      // Note: The combiner is the closest thing in Mekanism to an alloy kiln, as it
+      // takes two inputs and merges them into one output, consuming power to do so.
+      // This also makes up for the potential removal of the default recipes of the combiner in the future.
+      event.recipes.mekanismCombining(output, inputs[0], inputs[1]);
     }
-
-    // TODO: Maybe repurpose Mekanism's Combiner as a source of generic alloys in Mekanism.
-    //       Requires KubeJS Mekanism to be updated to Minecraft 1.18.2 first.
   };
 
   // Remove unused alloying recipes.
