@@ -25,8 +25,8 @@ onEvent('player.logged_in', event => {
   if (!event.player.stages.has('first_start')) {
     event.player.stages.add('first_start');
 
-    event.player.tell(Text.translate('valhelsia.first_start_message'));
-    event.player.tell(Text.translate('valhelsia.discord').blue().underlined().click('https://discord.com/invite/rdfQuaM'));
+    event.player.tell(Text.translate('valhelsia.chat.first_start_message'));
+    event.player.tell(Text.translate('valhelsia.chat.discord').blue().underlined().click('https://discord.com/invite/rdfQuaM'));
 
     event.player.give(Item.of('akashictome:tome', AKASHIC_TOME_NBT));
   }

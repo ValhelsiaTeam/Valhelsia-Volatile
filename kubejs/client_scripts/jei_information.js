@@ -25,5 +25,13 @@
  * JEI Information Event Handler
  */
 onEvent('jei.information', event => {
-  // TODO: JEI Information here (make sure to read above information regarding translations).
+  // Valhelsia-specific information:
+  event.add('akashictome:tome', Text.translate('valhelsia.jei_information.akashic_tome.tome'));
+
+  // Additional help for modded items / blocks:
+  event.add('farmersdelight:rice', Text.translate('valhelsia.jei_information.farmers_delight.rice'));
+  event.add('forbidden_arcanus:fungyss', Text.translate('valhelsia.jei_information.forbidden_arcanus.fungyss'));
+
+  // TODO: More here later, these are just to check that translations work in JEI information.
+
 });
