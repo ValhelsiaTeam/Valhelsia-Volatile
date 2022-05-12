@@ -137,8 +137,8 @@ onEvent('recipes', event => {
 
   // ----- Alchemy Infusion Recipes -----
   alchemy('byg:end_sand', 'minecraft:end_stone', 100);
-  alchemy('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:aquatic_cycle');
-  alchemy('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:aquatic_cycle');
+  alchemyG('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:aquatic_cycle');
+  alchemyG('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:aquatic_cycle');
 
   // ----- Conjuration Infusion Recipes -----
 
