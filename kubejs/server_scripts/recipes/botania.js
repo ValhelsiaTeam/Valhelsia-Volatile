@@ -42,43 +42,39 @@ onEvent('recipes', event => {
   };
 
   /**
-   * Creates an Alchemy Catalyst Mana Infusion recipe (without group).
+   * Creates an Alchemy Catalyst Mana Infusion recipe.
    * @param {(string|Item)} output One or more output items. Usually just one as alchemy is used for transformation.
    * @param {(string|Ingredient)} input A single input ingredient.
    * @param {number} mana The mana cost of the infusion. For reference, logs tend to cost 40 and saplings 120 mana.
+   * @param {string} [group] The optional Botania group ID to add the recipe to. Examples: 'botania:log_cycle', 'botania:sapling_cycle', 'botania:shrub_cycle'.
    */
-  const alchemy = (output, input, mana) => {
-    event.custom({
-      type: 'botania:mana_infusion',
-      input: Ingredient.of(input).toJson(),
-      output: Item.of(output).toResultJson(),
-      mana: mana,
-      catalyst: {
-        type: 'block',
-        block: 'botania:alchemy_catalyst'
-      }
-    });
-  };
-
-  /**
-   * Creates an Alchemy Catalyst Mana Infusion recipe (with group).
-   * @param {(string|Item)} output One or more output items. Usually just one as alchemy is used for transformation.
-   * @param {(string|Ingredient)} input A single input ingredient.
-   * @param {number} mana The mana cost of the infusion. For reference, logs tend to cost 40 and saplings 120 mana.
-   * @param {string} group The Botania item group ID to add the recipe to. Examples: 'botania:log_cycle', 'botania:sapling_cycle', 'botania:shrub_cycle'.
-   */
-   const alchemyG = (output, input, mana, group) => {
-    event.custom({
-      type: 'botania:mana_infusion',
-      input: Ingredient.of(input).toJson(),
-      output: Item.of(output).toResultJson(),
-      mana: mana,
-      group: group,
-      catalyst: {
-        type: 'block',
-        block: 'botania:alchemy_catalyst'
-      }
-    });
+   const alchemy = (output, input, mana, group) => {
+    if (typeof group == 'undefined') {
+      // Without Group
+      event.custom({
+        type: 'botania:mana_infusion',
+        input: Ingredient.of(input).toJson(),
+        output: Item.of(output).toResultJson(),
+        mana: mana,
+        catalyst: {
+          type: 'block',
+          block: 'botania:alchemy_catalyst'
+        }
+      });
+    } else {
+      // With Group
+      event.custom({
+        type: 'botania:mana_infusion',
+        input: Ingredient.of(input).toJson(),
+        output: Item.of(output).toResultJson(),
+        mana: mana,
+        group: group,
+        catalyst: {
+          type: 'block',
+          block: 'botania:alchemy_catalyst'
+        }
+      });
+    }
   };
 
   /**
@@ -137,8 +133,8 @@ onEvent('recipes', event => {
 
   // ----- Alchemy Infusion Recipes -----
   alchemy('byg:end_sand', 'minecraft:end_stone', 100);
-  alchemyG('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:aquatic_cycle');
-  alchemyG('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:aquatic_cycle');
+  alchemy('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:aquatic_cycle');
+  alchemy('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:aquatic_cycle');
 
   // ----- Conjuration Infusion Recipes -----
 
