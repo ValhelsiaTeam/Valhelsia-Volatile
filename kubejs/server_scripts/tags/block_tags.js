@@ -112,4 +112,7 @@ onEvent('tags.blocks', event => {
     'byg:white_cut_sandstone',
     'byg:white_smooth_sandstone',
   ]);
+
+  // ----- Custom Tags -----
+  event.add('valhelsia:natural_logs', ALL_NATURAL_LOGS);
 });

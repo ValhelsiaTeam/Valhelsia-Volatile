@@ -7,7 +7,7 @@
 
 [tree_harvesting]
 	#Examples: 'minecraft:oak_log', '#minecraft:logs'
-	log_types = ["minecraft:acacia_log", "minecraft:birch_log", "minecraft:dark_oak_log", "minecraft:jungle_log", "minecraft:oak_log", "minecraft:spruce_log", "minecraft:crimson_stem", "minecraft:warped_stem"]
+	log_types = ["#valhelsia:natural_logs"]
 	#Examples: 'minecraft:dirt', '#forge:sand/colorless'
 	ground_types = ["minecraft:dirt", "minecraft:grass_block", "minecraft:coarse_dirt", "minecraft:podzol", "minecraft:mycelium", "minecraft:warped_nylium", "minecraft:crimson_nylium", "minecraft:netherrack"]
 	#The tools which the player is allowed to harvest trees
