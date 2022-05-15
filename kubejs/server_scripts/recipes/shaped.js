@@ -24,11 +24,11 @@
  */
 onEvent('recipes', event => {
   // Convenience Functions:
-  let shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
-  let shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};
-  let donut = (output, input) => {event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input})};
-  let wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
-  let barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
+  const shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
+  const shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};
+  const donut = (output, input) => {event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input})};
+  const wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
+  const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
 
   // Valhelsia
   wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');

@@ -52,7 +52,7 @@ onEvent('recipes', function (event) {
   [
     'byg:chain_plating', // Redundant Item.
   ].forEach(function (remove) {
-    event.remove({output: remove});
+    event.remove({input: remove});
   });
 
   // Remove recipes by output.

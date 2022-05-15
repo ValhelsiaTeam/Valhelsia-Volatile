@@ -48,7 +48,7 @@ onEvent('recipes', event => {
    * @param {number} mana The mana cost of the infusion. For reference, logs tend to cost 40 and saplings 120 mana.
    * @param {string} [group] The optional Botania group ID to add the recipe to. Examples: 'botania:log_cycle', 'botania:sapling_cycle', 'botania:shrub_cycle'.
    */
-   const alchemy = (output, input, mana, group) => {
+  const alchemy = (output, input, mana, group) => {
     if (typeof group == 'undefined') {
       // Without Group
       event.custom({
