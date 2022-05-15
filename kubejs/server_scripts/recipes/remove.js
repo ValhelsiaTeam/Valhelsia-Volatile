@@ -44,16 +44,12 @@ onEvent('recipes', function (event) {
     'undergarden:smelt_glitterkelp', // Redundant Recipe.
 
     // Immersive Engineering
-  ].forEach(function (remove) {
-    event.remove({id: remove});
-  });
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.
   [
     'byg:chain_plating', // Redundant Item.
-  ].forEach(function (remove) {
-    event.remove({input: remove});
-  });
+  ].forEach((ingredientID) => event.remove({input: ingredientID}));
 
   // Remove recipes by output.
   [
@@ -94,8 +90,6 @@ onEvent('recipes', function (event) {
     'mekanismtools:lapis_lazuli_leggings',
     'mekanismtools:lapis_lazuli_boots',
     'mekanismtools:lapis_lazuli_shield',
-  ].forEach(function (remove) {
-    event.remove({output: remove});
-  });
+  ].forEach((itemID) => event.remove({output: itemID}));
 
 });

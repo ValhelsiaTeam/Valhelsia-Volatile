@@ -119,9 +119,7 @@ onEvent('recipes', event => {
 
     // TODO: More as tags are created / expanded.
     // See default recipes here: https://github.com/mekanism/Mekanism/tree/1.18.x/src/datagen/generated/mekanism/data/mekanism/recipes/crushing/biofuel
-  ].forEach(function (remove) {
-    event.remove({id: remove});
-  });
+  ].forEach((recipeID) => event.remove({id: recipeID}));
   
   bioCrush('#minecraft:flowers', 5);
   bioCrush('#minecraft:saplings', 2);

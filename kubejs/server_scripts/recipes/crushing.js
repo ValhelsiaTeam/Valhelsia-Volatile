@@ -59,9 +59,7 @@ onEvent('recipes', event => {
     'create:milling/sandstone',
     'create:milling/terracotta',
     'mekanism:crushing/soul_soil_to_soul_sand',
-  ].forEach(function (remove) {
-    event.remove({id: remove});
-  });
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Crushing
   crush('minecraft:red_sand', 'minecraft:granite');

@@ -55,9 +55,7 @@ onEvent('recipes', event => {
     'immersiveengineering:alloysmelter/bronze',
     'immersiveengineering:alloysmelter/constantan',
     'immersiveengineering:alloysmelter/electrum',
-  ].forEach(function (remove) {
-    event.remove({id: remove});
-  });
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Minecraft
   alloy('minecraft:netherite_ingot', ['4x minecraft:netherite_scrap', '4x #forge:ingots/gold']);

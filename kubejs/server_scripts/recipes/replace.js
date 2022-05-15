@@ -25,7 +25,7 @@
 onEvent('recipes', function (event) {
 
   // Convenience Functions
-  const replaceInputID = (id, from, to) => { event.replaceInput({id: id}, from, to, true)};
+  const replaceInputID = (recipeID, from, to) => { event.replaceInput({id: recipeID}, from, to, true)};
   const replaceInput = (from, to) => { event.replaceInput({}, from, to, true)};
 
   // Fix BYG's use of the Fabric tag for lecterns instead of the Forge tag when changing the Lectern recipe.
@@ -41,9 +41,7 @@ onEvent('recipes', function (event) {
     'botania:apothecary_default',
     'supplementaries:turn_table',
     'structurize:sceptergold',
-  ].forEach(function (id) {
-    replaceInputID(id, 'minecraft:cobblestone', '#minecraft:stone_crafting_materials');
-  });
+  ].forEach((recipeID) => replaceInputID(recipeID, 'minecraft:cobblestone', '#minecraft:stone_crafting_materials'));
 
   // Stone variants in place of Minecraft Stone in some recipes:
   [ // Recipe ID:
@@ -52,9 +50,7 @@ onEvent('recipes', function (event) {
     'botania:tiny_planet',
     'botania:tiny_planet_block',
     'multiblock:multiblock',
-  ].forEach(function (id) {
-    replaceInputID(id, 'minecraft:stone', '#forge:stone');
-  });
+  ].forEach((recipeID) => replaceInputID(recipeID, 'minecraft:stone', '#forge:stone'));
 
   // Feather variants in place of Minecraft Feathers in some recipes:
   [ // Recipe ID:
@@ -67,9 +63,7 @@ onEvent('recipes', function (event) {
     'rftoolsutility:featherfalling_module',
     'rftoolsutility:featherfallingplus_module',
     'xercamusic:music_sheet',
-  ].forEach(function (id) {
-    replaceInputID(id, 'minecraft:feather', '#forge:feathers');
-  });
+  ].forEach((recipeID) => replaceInputID(recipeID, 'minecraft:feather', '#forge:feathers'));
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers', true);
 
   // Vine variants in place of Minecraft Vines in some recipes:
@@ -88,9 +82,7 @@ onEvent('recipes', function (event) {
     'valhelsia_structures:lapidified_jungle_log',
     'waystones:mossy_waystone_convert',
     
-  ].forEach(function (id) {
-    replaceInputID(id, 'minecraft:vine', '#valhelsia:vines/green');
-  });
+  ].forEach((recipeID) => replaceInputID(recipeID, 'minecraft:vine', '#valhelsia:vines/green'));
 
   // Kelp variants in place of Minecraft Kelp in some recipes:
   [ // Recipe ID:
@@ -98,7 +90,5 @@ onEvent('recipes', function (event) {
     'minecraft:dried_kelp_from_campfire_cooking',
     'minecraft:dried_kelp_from_smelting',
     'minecraft:dried_kelp_from_smoking',
-  ].forEach(function (id) {
-    replaceInputID(id, 'minecraft:kelp', '#valhelsia:kelp');
-  });
+  ].forEach((recipeID) => replaceInputID(recipeID, 'minecraft:kelp', '#valhelsia:kelp'));
 });

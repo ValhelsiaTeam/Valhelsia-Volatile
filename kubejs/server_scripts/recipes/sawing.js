@@ -41,9 +41,7 @@
   // For removal of sawing recipes with no replacement, use remove.js instead.
   [
     // Placeholder.
-  ].forEach(function (remove) {
-    event.remove({id: remove});
-  });
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // TODO: Add sawing recipes here.
   //       To start with, look at existing IE sawmill recipes and add any missing mods.
