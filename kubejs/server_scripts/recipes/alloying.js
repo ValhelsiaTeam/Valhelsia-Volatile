@@ -69,9 +69,6 @@ onEvent('recipes', event => {
   alloy('forbidden_arcanus:obsidian_ingot', ['4x #forge:dusts/obsidian', '4x #forge:nuggets/iron']);
   alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
   alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
-
-  // The Graveyard
-  alloy('graveyard:dark_iron_ingot', ['#forge:ingots/iron', 'graveyard:corruption']);
   
   // Immersive Engineering
   alloy('2x immersiveengineering:ingot_constantan', ['#forge:ingots/copper', '#forge:ingots/nickel']);
