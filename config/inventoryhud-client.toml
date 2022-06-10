@@ -99,10 +99,10 @@
 	potHalign = "LEFT"
 	#Potion HUD position (X)
 	#Range: -9999 ~ 9999
-	xPotionPos = 3
+	xPotionPos = 5
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 4
+	yPotionPos = 5
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103
