@@ -1,0 +1,16 @@
+key_key.trashslot.toggle:key.keyboard.unknown:NONE
+key_key.trashslot.delete:key.keyboard.delete:NONE
+key_key.trashslot.deleteAll:key.keyboard.delete:SHIFT
+key_Reload Menu | CTRL + ALT + :key.keyboard.unknown:NONE
+key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.unknown:NONE
+key_key.inventoryhud.toggle:key.keyboard.unknown:NONE
+key_gui.xaero_new_waypoint:key.keyboard.v:NONE
+key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b:NONE
+key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.sort:key.mouse.middle:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown:NONE
