@@ -31,7 +31,7 @@ onEvent('recipes', event => {
   const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
 
   // Valhelsia
-  wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');
+  //wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');
 
   // Minecraft
   shaped3x3('minecraft:cobweb', 'minecraft:string');
@@ -86,16 +86,16 @@ onEvent('recipes', event => {
     A: 'minecraft:chain'
   });
 
-  event.shaped('minecraft:bundle', [
-    'SCS',
-    'C C',
-    'CCC'
-  ], {
-    S: 'minecraft:string',
-    C: 'farmersdelight:canvas'
-  });
+  //event.shaped('minecraft:bundle', [
+  //  'SCS',
+  //  'C C',
+  //  'CCC'
+  //], {
+  //  S: 'minecraft:string',
+  //  C: 'farmersdelight:canvas'
+  //});
 
   // Farmer's Delight
-  shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
+  //shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
 });
